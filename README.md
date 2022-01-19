@@ -8,7 +8,6 @@ npm install
 ### Compiles and hot-reloads for development
 ```
 npm run serve
-npx tailwindcss -i ./src/main.css -o ./dist/output.css --watch
 ```
 
 ### Compiles and minifies for production
