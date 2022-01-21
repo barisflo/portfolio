@@ -1,9 +1,9 @@
 <template>
-  <div id="app" class="h-screen bg-cultured">
+  <div id="app" class="h-screen">
     <Nav/>
-    <div>
+    <section id="about" class="flex h-full">
       <Main msg="Florent Baris"/>
-    </div>
+    </section>
   </div>
 </template>
 
