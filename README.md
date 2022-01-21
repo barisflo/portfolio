@@ -1,4 +1,6 @@
 # portfolio
+To present myself Florent Baris and my projects
+Available on https://baris-f.github.io/portfolio/
 
 ## Project setup
 ```
