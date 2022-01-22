@@ -5,7 +5,7 @@
       <About msg="Florent Baris"/>
       <Arrow/>
     </section>
-    <section id="agile" class="flex pt-20">
+    <section id="agile" class="flex">
       <Agile/>
     </section>
     <section id="projects" class="flex">

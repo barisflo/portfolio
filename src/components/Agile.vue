@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-blue-500 rounded-l rounded-md w-11/12 sm:w-3/4 2xl:w-3/5 flex font-sans h-80">
+  <div class="bg-blue-500 rounded-l rounded-md w-11/12 sm:w-3/4 flex font-sans h-80">
     <div class="flex flex-wrap space-x-4 my-5">
       <div class="hidden 2xl:block rounded w-64 p-2" style="background-color: #dae4e9;">
         <div class="flex justify-between py-1">
@@ -60,11 +60,11 @@
           </div>
 
           <div class="bg-white p-2 rounded mt-1 border-b border-grey cursor-pointer hover:bg-grey-lighter">
-            Use learned Korean
+            Speak and practice Korean
           </div>
 
           <div class="bg-white p-2 rounded mt-1 border-b border-grey cursor-pointer hover:bg-grey-lighter">
-            Put in practice learned Digital theory
+            Use Transformation Digital knowledge in projects
             <div class="text-grey-darker mt-2 ml-2 flex justify-between items-start">
               <span class="text-xs flex items-center">
               <svg class="h-4 fill-current mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path d="M11 4c-3.855 0-7 3.145-7 7v28c0 3.855 3.145 7 7 7h28c3.855 0 7-3.145 7-7V11c0-3.855-3.145-7-7-7zm0 2h28c2.773 0 5 2.227 5 5v28c0 2.773-2.227 5-5 5H11c-2.773 0-5-2.227-5-5V11c0-2.773 2.227-5 5-5zm25.234 9.832l-13.32 15.723-8.133-7.586-1.363 1.465 9.664 9.015 14.684-17.324z"/></svg>
@@ -93,13 +93,13 @@
           </div>
 
           <div class="bg-white p-2 rounded mt-1 border-b border-grey cursor-pointer hover:bg-grey-lighter">
-            IT Master Degree, confirmed developer
+            <p class="type"> IT Master Degree, confirmed developer</p>
           </div>
           <p class="mt-3 text-grey-dark">Add a card...</p>
         </div>
       </div>
     </div>
-    <div class="absolute bg-gradient-to-r from-blue-500 via-transparent to-transparent rounded-l rounded-md w-3/4 h-80 t-0 l-0">
+    <div class="absolute bg-gradient-to-r from-blue-500 via-transparent to-transparent rounded-l rounded-md w-3/4 h-80 t-0 l-0 z-0">
     </div>
   </div>
 </template>

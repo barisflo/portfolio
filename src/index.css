@@ -10,3 +10,15 @@ html {
 button {
     @apply px-4 py-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full;
 }
+/*
+.css-typing {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 4s steps(44) 1s 1 normal both;
+}
+
+@keyframes typewriter{
+    from { width: 0 }
+    to { width: 100%; white-space: pre-wrap}
+}
+*/
