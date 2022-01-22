@@ -5,9 +5,13 @@
       <About msg="Florent Baris"/>
       <Arrow/>
     </section>
+    <section id="agile" class="flex pt-20">
+      <Agile/>
+    </section>
     <section id="projects" class="flex">
       <Projects msg="Florent Baris"/>
     </section>
+
   </div>
 </template>
 
@@ -16,10 +20,12 @@ import Nav from './components/Nav.vue'
 import About from './components/About.vue'
 import Projects from "@/components/Projects";
 import Arrow from "@/components/Arrow";
+import Agile from "@/components/Agile";
 
 export default {
   name: 'App',
   components: {
+    Agile,
     Nav,
     About,
     Arrow,
