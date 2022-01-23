@@ -1,28 +1,28 @@
 <template>
-  <div class="container m-auto p-4 px-8 md:p-10 md:p-2 md:px-20">
+  <div class="container m-auto p-4 px-4 md:p-10 md:p-2 md:px-20">
     <div class="flex flex-col">
-      <div class="flex flex-wrap">
-        <div class="md:w-1/2 w-full">
-          <img class="rounded-full m-auto md:h-80 md:w-80 h-64 w-64 object-cover" src="../assets/cv.jpeg" alt="Picture of Florent Baris">
+      <div class="flex flex-wrap mt-16 md:mt-0">
+        <div class="md:w-1/2 w-full m-auto">
+          <img class="rounded-full m-auto md:h-80 md:w-80 h-60 w-60 object-cover" src="../assets/cv.jpeg" alt="Picture of Florent Baris">
         </div>
-        <div class="md:w-1/2 md:p-0 p-4 flex flex-col">
+        <div class="md:w-1/2 md:p-0 sm:p-4 flex flex-col">
           <div class="flex-grow mt-4">
             <h1 class="text-4xl">{{ msg }}</h1>
             <h2 class="text-3xl ml-2 mt-5">About me</h2>
-            <p class="ml-2 p-3">Passionate by project creation as a whole, I have a pluri-disciplinary
+            <p class="ml-2 sm:p-3 pt-1">Passionate by project creation as a whole, I have a pluri-disciplinary
               profile. With a strong technical background, I today am experienced in
               Digital Transformation and Agile.<br/>
                 I am ambitious, resourceful, adaptable, resilient and creative. I want to
               make a difference and solve real world problems.</p>
           </div>
-          <div class="mt-2 space-x-3">
+          <div class="mt-2 space-x-1 sm:space-x-3">
             <a href="CV_Florent_Baris_2022_EN_web.pdf" target="_blank" rel="noreferrer">
               <button class="bg-celadonBlue hover:bg-prussianBlue">
                 <svg class="w-5 h-5 fill-current" role="img" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
                   <g>
                     <path d="M34.395,0H9.522c-2.762,0-5,2.239-5,5v33.916c0,2.761,2.238,5,5,5h24.871c2.762,0,5-2.239,5-5V5C39.395,2.239,37.154,0,34.395,0z M9.208,16.855c0-1.172,0.951-2.121,2.121-2.121h0.742c-0.791-0.874-1.277-2.03-1.277-3.304c0-2.723,2.209-4.931,4.932-4.931c2.725,0,4.932,2.207,4.932,4.932c0,1.272-0.486,2.429-1.279,3.303h0.709c1.172,0,2.121,0.949,2.121,2.121v3.578c0,1.122-0.875,2.03-1.975,2.106h-9.051c-1.1-0.076-1.975-0.984-1.975-2.106V16.855L9.208,16.855z M32.708,37.416h-21.5c-1.104,0-2-0.896-2-2s0.896-2,2-2h21.5c1.104,0,2,0.896,2,2S33.812,37.416,32.708,37.416zM32.708,29.916h-21.5c-1.104,0-2-0.896-2-2s0.896-2,2-2h21.5c1.104,0,2,0.896,2,2S33.812,29.916,32.708,29.916zM32.708,22.416 h-6.5c-1.104,0-2-0.896-2-2c0-1.104,0.896-2,2-2h6.5c1.104,0,2,0.896,2,2C34.708,21.52,33.812,22.416,32.708,22.416z"/>
                   </g>
-                </svg><span>View Resume</span>
+                </svg><span class="sm:hidden">Resume</span><span class="sm:block hidden">View Resume</span>
               </button>
             </a>
             <a href="https://linkedin.com/in/florent-baris" target="_blank">

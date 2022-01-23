@@ -1,59 +1,50 @@
 <template>
-  <div class="w-full md:w-1/2 xl:w-1/3 px-4">
-    <div class="bg-white rounded-lg overflow-hidden mb-10">
-      <img
-          src="https://cdn.tailgrids.com/1.0/assets/images/cards/card-01/image-02.jpg"
-          alt="image"
-          class="w-full"
-      />
-      <div class="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
+  <div class="w-80 px-4">
+    <a v-bind:href="link" target="_blank">
+    <div class=" md:w-20rem shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105
+    bg-white rounded-lg overflow-hidden mb-10">
+      <div class="h-60 overflow-hidden">
+        <img
+            v-bind:src="require('@/assets/' + img)"
+            v-bind:alt="img"
+            class="object-cover h-60 w-80"
+        />
+      </div>
+      <div class="h-48 p-4 text-center">
         <h3>
-          <a
-              href="javascript:void(0)"
-              class="
-                        font-semibold
-                        text-dark text-xl
-                        sm:text-[22px]
-                        md:text-xl
-                        lg:text-[22px]
-                        xl:text-xl
-                        2xl:text-[22px]
-                        mb-4
-                        block
-                        hover:text-primary
-                        "
+          <p
+              class="font-semibold text-dark text-xl sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]
+               mb-4 block hover:text-primary"
           >
-            The ultimate UX and UI guide to card design
-          </a>
+            {{ title + " - " + year}}
+          </p>
         </h3>
         <p class="text-base text-body-color leading-relaxed mb-7">
-          Lorem ipsum dolor sit amet pretium consectetur adipiscing
-          elit. Lorem consectetur adipiscing elit.
+          {{ desc }}
         </p>
-        <a
-            href="javascript:void(0)"
-            class="
-                     inline-block
-                     py-2
-                     px-7
-                     border border-[#E5E7EB]
-                     rounded-full
-                     text-base text-body-color
-                     font-medium
-                     hover:border-primary hover:bg-primary hover:text-white
-                     transition
-                     "
-        >
-          View Details
-        </a>
+        <div class="space-x-2">
+          <div v-for="tag in tags" :key="tag" class="bg-apricot px-3 py-1 font-semibold text-sm inline-flex rounded-full">
+            {{ tag }}
+          </div>
+        </div>
       </div>
     </div>
+    </a>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Card'
+  name: 'Card',
+  props: {
+    title: String,
+    year: String,
+    link: String,
+    desc: String,
+    img: String,
+    tags: Array,
+
+  }
 }
 </script>
 
