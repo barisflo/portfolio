@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         'imperialRed': '#E63946',
+        'apricot' : '#FFD6BA',
         'cultured': '#FAF9F9',
         'azure': '#eef9fa',
         'powderBlue': '#A8DADC',
