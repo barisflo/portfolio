@@ -5,13 +5,13 @@
       <About msg="Florent Baris"/>
       <Arrow/>
     </section>
-    <section id="agile" class="flex">
+    <a class="anchor" id="agile"></a>
+    <section class="flex">
       <Agile/>
     </section>
-    <section id="projects" class="flex">
+    <section id="projects" class="flex w-full">
       <Projects msg="Florent Baris"/>
     </section>
-
   </div>
 </template>
 
