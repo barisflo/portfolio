@@ -8,7 +8,7 @@
         <div class="md:w-1/2 md:p-0 sm:p-4 flex flex-col">
           <div class="flex-grow mt-4">
             <h1 class="text-4xl">{{ msg }}</h1>
-            <h2 class="text-3xl ml-2 mt-5">About me</h2>
+            <h2 class="text-3xl ml-2 mt-2 md:mt-5">About me</h2>
             <p class="ml-2 sm:p-3 pt-1">Passionate by project creation as a whole, I have a pluri-disciplinary
               profile. With a strong technical background, I today am experienced in
               Digital Transformation and Agile.<br/>
