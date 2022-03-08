@@ -16,7 +16,7 @@
               make a difference and solve real world problems.</p>
           </div>
           <div class="mt-2 space-x-1 sm:space-x-3">
-            <a href="CV_Florent_Baris_2022_EN_web.pdf" target="_blank" rel="noreferrer">
+            <a href="CV_Florent_Baris_2022_EN_PM_web.pdf" target="_blank" rel="noreferrer">
               <button class="bg-celadonBlue hover:bg-prussianBlue">
                 <svg class="w-5 h-5 fill-current" role="img" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
                   <g>

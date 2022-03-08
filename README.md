@@ -15,10 +15,12 @@ npm run serve
 ```
 
 ### Compiles and minifies for production
-Built on ./docs/ to be hosted by Github Pages
+Run
 ```
 npm run build
 ```
+then rename ./dist to ./docs
+Built on ./docs/ to be hosted by Github Pages
 
 ### Lints and fixes files
 ```
