@@ -1,6 +1,6 @@
 <template>
   <div class="container p-0 md:p-10 md:p-2 md:px-20 m-auto">
-    <h2 class="text-3xl mt-6 mb-8 md:mt-10 md:mb-12 text-center">Some Projects</h2>
+    <h2 class="text-3xl mt-6 mb-8 md:mt-10 md:mb-12 text-center">My Projects</h2>
     <div class="flex flex-wrap justify-center">
       <Card img="GamePipe.png" link="https://gamepipe.io/" title="GamePipe" year="2021" v-bind:tags="['Laravel', 'TailwindCSS']"
             desc="Website to play and host video games"/>
