@@ -4,6 +4,8 @@
     <div class="flex flex-wrap justify-center">
       <Card img="GamePipe.png" link="https://gamepipe.io/" title="GamePipe" year="2021" v-bind:tags="['Laravel', 'TailwindCSS']"
             desc="Website to play and host video games"/>
+      <Card img="proxima.png" link="https://play.google.com/store/apps/details?id=com.gamevrest.proximaCities" title="Proxima Cities" year="2020" v-bind:tags="['Unity', 'C#']"
+            desc="Augmented reality city, on mobile application"/>
       <Card img="BarrierSquad.png" link="https://play.google.com/store/apps/details?id=com.InDustry.BarriersQuad&hl=en&gl=US" title="Barrier Squad" year="2019" v-bind:tags="['Unity', 'Android']"
             desc="Mobile Game, tower defense like"/>
       <Card img="PCRDefender.png" link="https://gamepipe.io/@barisf/pcr-defender" title="PCR Defender" year="2015" v-bind:tags="['Unity', 'C#']"
