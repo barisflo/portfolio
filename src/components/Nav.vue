@@ -1,5 +1,5 @@
 <template>
-  <nav class="fixed w-full bg-gradient-to-b from-cultured via-cultured to-transparent pb-12 z-10">
+  <nav class="fixed w-full bg-cultured z-10">
     <!-- TODO:add shadow and separate on scroll-->
     <div class="container flex items-center justify-center p-5 mx-auto text-gray-800 capitalize dark:text-gray-300">
 
