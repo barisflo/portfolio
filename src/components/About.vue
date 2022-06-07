@@ -8,10 +8,19 @@
         <div class="md:w-1/2 md:p-0 sm:p-4 flex flex-col">
           <div class="flex-grow mt-4">
             <h1 class="text-4xl">{{ msg }}</h1>
-            <h2 class="text-3xl ml-2 mt-2 md:mt-5">나에 대해서</h2>
-            <p class="ml-2 sm:p-3 pt-1">전체적으로 프로젝트 생성에 열정적이어서, 저는 다양한 분야의 프로필을
-              가지고 있습니다. 강력한 기술력을 바탕으로, 저는 오늘 디지털
-              트랜스포메이션과 애자일 분야에서 경험을 쌓았습니다.<br/>
+            <h2 class="text-3xl ml-2 mt-2 md:mt-5">About me</h2>
+            <p class="ml-2 sm:py-3 pt-1 pb-0">Passionate by project creation as a whole, I have a pluri-disciplinary
+              profile. With a strong technical background, I today am experienced in
+              Digital Transformation and Agile.<br/>
+              I am ambitious, resourceful, adaptable, resilient and creative. I want to
+              make a difference and solve real world problems.</p>
+            <p class="ml-2 sm:py-3 pt-1">제가 지닌 다학제적인 프로필을 바탕으로, 전반적인 프로젝트 생성 과정에 강한
+              열정을 지니고 있습니다. 개인 프로젝트 및 다년간의 교육을 통해 얻은 강력한
+              기술적 배경을 토대로 경험이 풍부한 개발자가 될 수 있었습니다. <br/>
+              저는 상황에 따라 적절하게 대처하는 방법을 알고 있으며, 새로운 환경에 대한 적응력이
+              뛰어납니다. 창의적인 문제 해결 방안을 어렵지 않게 도색해내며, 꿈을 좇아
+              달려가는 열정 또한 지니고 있습니다. 저는 궁극적으로 현실의 문제를 해결할 수
+              있는, 차별화된 개발자가 되고 싶습니다.<br/>
               나는 야망이 있고, 지략이 있고, 적응력이 있고, 회복력이 있고, 창의적이다.
               나는 변화를 주고 현실 세계의 문제들을 해결하고 싶다.</p>
           </div>
@@ -25,6 +34,15 @@
                 </svg><span class="sm:hidden">Resume</span><span class="sm:block hidden">View Resume</span>
               </button>
             </a>
+              <a href="CV_Florent_Baris_2022_KR_web.pdf" target="_blank" rel="noreferrer">
+                <button class="bg-celadonBlue hover:bg-prussianBlue">
+                  <svg class="w-5 h-5 fill-current" role="img" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                      <path d="M34.395,0H9.522c-2.762,0-5,2.239-5,5v33.916c0,2.761,2.238,5,5,5h24.871c2.762,0,5-2.239,5-5V5C39.395,2.239,37.154,0,34.395,0z M9.208,16.855c0-1.172,0.951-2.121,2.121-2.121h0.742c-0.791-0.874-1.277-2.03-1.277-3.304c0-2.723,2.209-4.931,4.932-4.931c2.725,0,4.932,2.207,4.932,4.932c0,1.272-0.486,2.429-1.279,3.303h0.709c1.172,0,2.121,0.949,2.121,2.121v3.578c0,1.122-0.875,2.03-1.975,2.106h-9.051c-1.1-0.076-1.975-0.984-1.975-2.106V16.855L9.208,16.855z M32.708,37.416h-21.5c-1.104,0-2-0.896-2-2s0.896-2,2-2h21.5c1.104,0,2,0.896,2,2S33.812,37.416,32.708,37.416zM32.708,29.916h-21.5c-1.104,0-2-0.896-2-2s0.896-2,2-2h21.5c1.104,0,2,0.896,2,2S33.812,29.916,32.708,29.916zM32.708,22.416 h-6.5c-1.104,0-2-0.896-2-2c0-1.104,0.896-2,2-2h6.5c1.104,0,2,0.896,2,2C34.708,21.52,33.812,22.416,32.708,22.416z"/>
+                    </g>
+                  </svg><span class="sm:hidden">이력서</span><span class="sm:block hidden">이력서</span>
+                </button>
+              </a>
             <a href="https://linkedin.com/in/florent-baris" target="_blank">
                 <button class="bg-celadonBlue hover:bg-prussianBlue">
                 <svg class="w-5 h-5 fill-current" role="img" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
