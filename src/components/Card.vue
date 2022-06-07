@@ -30,7 +30,7 @@
       </div>
     </div>
     </a>
-    <Modal :modal="cardtitle" :link="link" :year="year" :desc="desc" :img="img" :tags="tags">
+    <Modal :modal="cardtitle" :link="link" :year="year" :desc="desc" :img="img" :tags="tags" :descKR="descKR">
     </Modal>
   </div>
 </template>
@@ -48,6 +48,7 @@ export default {
     year: String,
     link: String,
     desc: String,
+    descKR: String,
     img: String,
     tags: Array,
   },

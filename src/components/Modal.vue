@@ -1,7 +1,6 @@
 <template>
-  <dialog :id="modal" class="h-auto w-11/12 md:w-1/2 p-5  bg-white rounded-md ">
-
-    <div class="flex flex-col w-full h-auto ">
+  <dialog :id="modal" class="h-auto w-11/12 md:w-1/2 p-5 bg-white rounded-md">
+    <div class="flex flex-col w-full h-auto">
       <!-- Header -->
       <div class="flex w-full h-auto justify-center items-center">
         <div class="flex w-10/12 h-auto py-2 text-2xl font-bold">
@@ -15,10 +14,12 @@
       <!-- Modal Content-->
       <div class="flex flex-col w-full h-auto mt-2 py-10 px-2 justify-center items-center bg-gray-200 rounded text-center text-gray-500">
         {{ desc }}
+        <br>
+        {{ descKR }}
         <img
             v-bind:src="require('@/assets/' + img)"
             v-bind:alt="img"
-            class="object-cover mt-2 max-h-80"
+            class="object-cover mt-2 max-h-80 rounded"
         />
       </div>
       <a :href="link" target="_blank" class="m-auto mt-2">
@@ -39,10 +40,18 @@ export default {
     year: String,
     link: String,
     desc: String,
+    descKR: String,
     img: String,
     tags: Array,
   },
   methods: {
+    outClose(){
+      let isClickInsideElement = document.getElementById(this.modal).contains(event.target);
+      console.log(isClickInsideElement);
+      if (!isClickInsideElement) {
+        this.close();
+      }
+    },
     close() {
       document.getElementById(this.modal).close();
     }
