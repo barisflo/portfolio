@@ -6,6 +6,7 @@
           <h3 class="text-sm pl-10 font-bold">Backlog</h3>
           <svg class="h-4 fill-current text-grey-dark cursor-default" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 10a1.999 1.999 0 1 0 0 4 1.999 1.999 0 1 0 0-4zm7 0a1.999 1.999 0 1 0 0 4 1.999 1.999 0 1 0 0-4zm7 0a1.999 1.999 0 1 0 0 4 1.999 1.999 0 1 0 0-4z"/></svg>
         </div>
+        <!-- TODO:Use type.js -->
         <div class="text-sm mt-2">
           <div class="bg-white p-2 rounded mt-1 border-b border-grey cursor-default hover:bg-grey-lighter zoom">
             Manage and launch big video game project

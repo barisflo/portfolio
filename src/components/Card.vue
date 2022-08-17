@@ -1,6 +1,6 @@
 <template>
   <div class="w-80 md:px-4">
-    <a v-bind:href="link" target="_blank">
+    <a @click="showModal" class="cursor-pointer">
     <div class=" md:w-20rem shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105
     bg-white rounded-lg overflow-hidden mb-10">
       <div class="h-60 overflow-hidden">
@@ -16,7 +16,7 @@
               class="font-semibold text-dark text-xl sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]
                mb-4 block hover:text-primary"
           >
-            {{ title + " - " + year}}
+            {{ cardtitle + " - " + year}}
           </p>
         </h3>
         <p class="text-base text-body-color leading-relaxed mb-7">
@@ -30,20 +30,32 @@
       </div>
     </div>
     </a>
+    <Modal :modal="cardtitle" :link="link" :year="year" :desc="desc" :img="img" :tags="tags" :descKR="descKR">
+    </Modal>
   </div>
 </template>
 
 <script>
+import Modal from "./Modal";
+
 export default {
   name: 'Card',
+  components: {
+    Modal,
+  },
   props: {
-    title: String,
+    cardtitle: String,
     year: String,
     link: String,
     desc: String,
+    descKR: String,
     img: String,
     tags: Array,
-
+  },
+  methods: {
+    showModal(){
+      document.getElementById(this.cardtitle).showModal();
+    }
   }
 }
 </script>
