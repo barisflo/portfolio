@@ -13,8 +13,8 @@
       </div>
       <!-- Modal Content-->
       <div class="flex flex-col w-full h-auto mt-2 py-10 px-2 justify-center items-center bg-gray-200 rounded text-center text-gray-500">
-        <div v-if="this.$lang == 'eng'">{{ desc }}</div>
-        <div v-if="this.$lang == 'kr'">{{ descKR }}</div>
+        <div v-if="getCookie('lang') == 'eng'">{{ desc }}</div>
+        <div v-if="getCookie('lang') == 'kr'">{{ descKR }}</div>
         <img
             v-bind:src="require('@/assets/' + img)"
             v-bind:alt="img"
@@ -32,6 +32,8 @@
 </template>
 
 <script>
+import {getCookie} from '../cookie';
+
 export default {
   name: 'Modal',
   props: {
@@ -44,6 +46,7 @@ export default {
     tags: Array,
   },
   methods: {
+    getCookie,
     outClose(){
       let isClickInsideElement = document.getElementById(this.modal).contains(event.target);
       console.log(isClickInsideElement);
