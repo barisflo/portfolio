@@ -12,6 +12,8 @@ document.addEventListener("scroll", () => {
   document.getElementById("arrow").remove();
 })
 
+Vue.prototype.$lang = "kr";
+
 new Vue({
   render: h => h(App),
 }).$mount('#app')

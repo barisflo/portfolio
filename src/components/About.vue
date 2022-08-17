@@ -9,11 +9,21 @@
           <div class="flex-grow mt-4">
             <h1 class="text-4xl">{{ msg }}</h1>
             <h2 class="text-3xl ml-2 mt-2 md:mt-5">About me</h2>
-            <p class="ml-2 sm:p-3 pt-1">Passionate by project creation as a whole, I have a pluri-disciplinary
+
+            <p v-if="this.$lang == 'eng'" class="ml-2 sm:py-3 pt-1">Passionate by project creation as a whole, I have a pluri-disciplinary
               profile. With a strong technical background, I today am experienced in
               Digital Transformation and Agile.<br/>
                 I am ambitious, resourceful, adaptable, resilient and creative. I want to
               make a difference and solve real world problems.</p>
+            <p v-if="this.$lang == 'kr'" class="ml-2 sm:py-3 pt-1">제가 지닌 다학제적인 프로필을 바탕으로, 전반적인 프로젝트 생성 과정에 강한
+              열정을 지니고 있습니다. 개인 프로젝트 및 다년간의 교육을 통해 얻은 강력한
+              기술적 배경을 토대로 경험이 풍부한 개발자가 될 수 있었습니다. <br/>
+              저는 상황에 따라 적절하게 대처하는 방법을 알고 있으며, 새로운 환경에 대한 적응력이
+              뛰어납니다. 창의적인 문제 해결 방안을 어렵지 않게 도색해내며, 꿈을 좇아
+              달려가는 열정 또한 지니고 있습니다. 저는 궁극적으로 현실의 문제를 해결할 수
+              있는, 차별화된 개발자가 되고 싶습니다.<br/>
+              나는 야망이 있고, 지략이 있고, 적응력이 있고, 회복력이 있고, 창의적이다.
+              나는 변화를 주고 현실 세계의 문제들을 해결하고 싶다.</p>
           </div>
           <div class="mt-2 space-x-1 sm:space-x-3">
             <a href="CV_Florent_Baris_2022_EN_web.pdf" target="_blank" rel="noreferrer">

@@ -30,6 +30,11 @@ export default {
     About,
     Arrow,
     Projects,
+  },
+  data() {
+    return {
+      lang: "eng"
+    }
   }
 }
 </script>
