@@ -5,7 +5,7 @@
       <Card img="datanest.png" link="https://github.com/baris-f/PBWS-DataNFT" cardtitle="Datanest" year="2022" v-bind:tags="['Vue 3', 'TailwindCSS', 'Web 3']"
             desc="Decentalized Data marketplace using NFT access tokens"
             descKR="NFT 액세스 토큰을 사용한 디센트럴화된 데이터 마켓플레이스"/>
-      <Card img="ethernal.png" link="https://github.com/whiterqbbit/Ethernal" cardtitle="Ethernal" year="2022" v-bind:tags="['Vue 3', 'EtherJS', 'Web 3']"
+      <Card img="Monolith.png" link="https://github.com/whiterqbbit/Ethernal" cardtitle="Monolith" year="2022" v-bind:tags="['Vue 3', 'EtherJS', 'Web 3']"
             desc="Pixel grid wall, stored in a blockchain and sold with ETH"
             descKR="블록체인에 저장되고 ETH와 함께 판매되는 픽셀 그리드 벽"/>
       <Card img="GamePipe.png" link="https://gamepipe.io/" cardtitle="GamePipe" year="2021" v-bind:tags="['Laravel', 'TailwindCSS']"

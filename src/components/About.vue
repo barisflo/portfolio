@@ -1,14 +1,14 @@
 <template>
   <div class="container m-auto p-4 px-4 md:p-10 md:p-2 md:px-20">
     <div class="flex flex-col">
-      <div class="flex flex-wrap mt-16 md:mt-0">
+      <div class="flex flex-wrap mt-14 md:mt-0">
         <div class="md:w-1/2 w-full m-auto">
           <img class="rounded-full m-auto md:h-80 md:w-80 h-52 w-52 object-cover" src="../assets/cv.jpeg" alt="Picture of Florent Baris">
         </div>
         <div class="md:w-1/2 md:p-0 sm:p-4 flex flex-col">
           <div class="flex-grow mt-4">
             <h1 class="text-4xl">{{ msg }}</h1>
-            <h2 class="text-2xl ml-2 mt-2 md:mt-5">About me</h2>
+            <h2 class="text-2xl ml-2 mt-2 md:mt-5">Developer Fullstack</h2>
             <p v-if="getCookie('lang') == 'eng'" class="ml-2 sm:py-3 pt-1">Passionate by project creation as a whole, I have a pluri-disciplinary
               profile. With a strong technical background, I today am experienced in
               Digital Transformation and Agile.<br/>
@@ -20,10 +20,9 @@
               기술적 배경을 토대로 경험이 풍부한 개발자가 될 수 있었습니다. <br/>
               저는 상황에 따라 적절하게 대처하는 방법을 알고 있으며, 새로운 환경에 대한 적응력이
               뛰어납니다. 창의적인 문제 해결 방안을 어렵지 않게 도색해내며, 꿈을 좇아
-              달려가는 열정 또한 지니고 있습니다. 저는 궁극적으로 현실의 문제를 해결할 수
-              있는, 차별화된 개발자가 되고 싶습니다.<br/>
+              달려가는 열정 또한 지니고 있습니다. <br/>
               나는 야망이 있고, 지략이 있고, 적응력이 있고, 회복력이 있고, 창의적이다.
-              나는 변화를 주고 현실 세계의 문제들을 해결하고 싶다.</p>
+              저는 궁극적으로 현실의 문제를 해결할 수 있는, 차별화된 개발자가 되고 싶습니다.</p>
           </div>
           <div class="mt-2 space-x-1 sm:space-x-3">
             <a href="CV_Florent_Baris_2022_EN_DEV_web.pdf" target="_blank" rel="noreferrer">

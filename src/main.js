@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import './index.css'
 import './cookie'
+import {getCookie, setCookie} from "./cookie";
 
 Vue.config.productionTip = false
 
@@ -13,6 +14,8 @@ document.addEventListener("scroll", () => {
   document.getElementById("arrow").remove();
 })
 
+if (getCookie("lang") === "")
+  setCookie("lang", "eng", 1000);
 
 new Vue({
   render: h => h(App),
