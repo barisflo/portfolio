@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  @apply bg-cultured;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -250px;
+  visibility: hidden;
+}
+
+.zoom {
+  @apply transition duration-300 ease-in-out transform hover:scale-105
+}
+
+button {
+  @apply px-4 py-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full;
+}

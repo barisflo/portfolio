@@ -6,17 +6,18 @@
 <!--
       <a href="#agile" class="border-b-2 border-transparent hover:text-gray-900 dark:hover:text-gray-200 hover:border-celadonBlue mx-1.5 sm:mx-6">Agile</a>
 -->
-      <a href="#projects" class="border-b-2 border-transparent hover:text-gray-900 dark:hover:text-gray-200 hover:border-celadonBlue mx-1.5 sm:mx-6">Projects</a>
+        <a href="#projects" class="border-b-2 border-transparent hover:text-gray-900 dark:hover:text-gray-200 hover:border-celadonBlue mx-1.5 sm:mx-6">Projects</a>
+        <a href="#contact" class="border-b-2 border-transparent hover:text-gray-900 dark:hover:text-gray-200 hover:border-celadonBlue mx-1.5 sm:mx-6">Contact</a>
       </div>
       <div class="container absolute flex justify-end pointer-events-none">
         <div class="pointer-events-auto flex mr-8">
             <img @click="changeLang('kr')"
-                v-bind:src="require('@/assets/' + 'south-korea.png')"
+                src="../assets/south-korea.png"
                 alt="south-korea"
                 class="w-8 cursor-pointer mr-2"
             />
             <img @click="changeLang('eng')"
-                v-bind:src="require('@/assets/' + 'united-kingdom.png')"
+                src="../assets/united-kingdom.png"
                 alt="united-kingdom"
                 class="w-8 cursor-pointer"
             />
@@ -28,6 +29,8 @@
 
 <script>
 import {setCookie} from "../cookie";
+
+import koreaFlag from '@/assets/south-korea.png'
 
 export default {
   name: 'Nav',
@@ -44,4 +47,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
+a {
+  @apply text-black;
+}
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <dialog :id="modal" class="h-auto w-11/12 md:w-1/2 p-5 bg-white rounded-md" @click="close">
+  <dialog :id="modal" class="h-2/3 w-11/12 md:w-1/2 p-5 bg-white rounded-md" @click="close">
     <div class="flex flex-col w-full h-auto" @click.stop>
       <!-- Header -->
       <div class="flex w-full h-auto justify-center items-center">
@@ -12,16 +12,16 @@
         <!--Header End-->
       </div>
       <!-- Modal Content-->
-      <div class="flex flex-col w-full h-auto mt-2 py-10 px-2 justify-center items-center bg-gray-200 rounded text-center text-gray-500">
+      <div class="flex flex-col text-xl w-full h-auto mt-2 py-10 px-2 justify-center items-center bg-gray-200 rounded text-center text-gray-600">
+        <img
+            v-bind:src="'./src/assets/' + img"
+            v-bind:alt="img"
+            class="object-cover mb-6 max-h-80 rounded"
+        />
         <div v-if="getCookie('lang') == 'eng'">{{ desc }}</div>
         <div v-if="getCookie('lang') == 'kr'">{{ descKR }}</div>
-        <img
-            v-bind:src="require('@/assets/' + img)"
-            v-bind:alt="img"
-            class="object-cover mt-2 max-h-80 rounded"
-        />
       </div>
-      <a :href="link" target="_blank" class="m-auto mt-2">
+      <a :href="link" target="_blank" class="m-auto mt-6">
         <button class="bg-celadonBlue hover:bg-prussianBlue">
           <span>Open Link</span>
         </button>

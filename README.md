@@ -4,23 +4,33 @@ To present myself Florent Baris and my projects
 
 Available on https://baris-f.github.io/portfolio/
 
-## Project setup
-```
+## Project Setup
+
+```sh
 npm install
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
+### Compile and Hot-Reload for Development
+
+```sh
+npm run dev
 ```
 
-### Compiles and minifies for production
+### Compile and Minify for Production
 Run
-```
+```sh
 npm run build
 ```
 then rename ./dist to ./docs
 Built on ./docs/ to be hosted by Github Pages
+
+## Library links
+
+Css library tailwind
+https://tailwindcss.com/
+https://tailwindcomponents.com/
+Preline : components library based on Tailwind
+https://preline.co/index.html
 
 ### Lints and fixes files
 ```
@@ -28,4 +38,6 @@ npm run lint
 ```
 
 ### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+See [Vite Configuration Reference](https://vitejs.dev/config/).
+

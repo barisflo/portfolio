@@ -5,7 +5,7 @@
     bg-white rounded-lg overflow-hidden mb-10">
       <div class="h-60 overflow-hidden">
         <img
-            v-bind:src="require('@/assets/' + img)"
+            v-bind:src="'../src/assets/' + img"
             v-bind:alt="img"
             class="object-cover h-60 w-80"
         />
@@ -19,8 +19,11 @@
             {{ cardtitle + " - " + year}}
           </p>
         </h3>
-        <p class="text-base text-body-color leading-relaxed mb-7">
+        <p v-if="getCookie('lang') === 'eng'" class="text-base text-body-color leading-relaxed mb-7">
           {{ desc }}
+        </p>
+        <p v-if="getCookie('lang') === 'kr'" class="text-base text-body-color leading-relaxed mb-7">
+          {{ descKR }}
         </p>
         <div class="space-x-2 mt-auto">
           <div v-for="tag in tags" :key="tag" class="bg-azure px-3 py-1 font-semibold text-sm inline-flex rounded-full">
@@ -36,7 +39,8 @@
 </template>
 
 <script>
-import Modal from "./Modal";
+import Modal from "./Modal.vue";
+import {getCookie} from "@/cookie";
 
 export default {
   name: 'Card',
@@ -53,6 +57,7 @@ export default {
     tags: Array,
   },
   methods: {
+    getCookie,
     showModal(){
       document.getElementById(this.cardtitle).showModal();
     }
