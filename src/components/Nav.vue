@@ -12,12 +12,12 @@
       <div class="container absolute flex justify-end pointer-events-none">
         <div class="pointer-events-auto flex mr-8">
             <img @click="changeLang('kr')"
-                src="../assets/south-korea.png"
+                src="@/assets/south-korea.png"
                 alt="south-korea"
                 class="w-8 cursor-pointer mr-2"
             />
             <img @click="changeLang('eng')"
-                src="../assets/united-kingdom.png"
+                src="@/assets/united-kingdom.png"
                 alt="united-kingdom"
                 class="w-8 cursor-pointer"
             />
