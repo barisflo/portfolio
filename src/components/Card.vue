@@ -5,8 +5,7 @@
     bg-white rounded-lg overflow-hidden mb-10">
       <div class="h-60 overflow-hidden">
         <img
-            :id="img"
-            src="@/assets/cv.jpeg"
+            :src="img"
             v-bind:alt="img"
             class="object-cover h-60 w-80"
         />
@@ -58,9 +57,6 @@ export default {
     tags: Array,
   },
   mounted(){
-    document.getElementById(this.img).src = document.getElementById(this.img).src.slice(0, -7);
-    document.getElementById(this.img).src += this.img;
-    document.getElementById(this.cardtitle).img = document.getElementById(this.img).src;
   },
   methods: {
     getCookie,

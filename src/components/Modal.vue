@@ -14,7 +14,7 @@
       <!-- Modal Content-->
       <div class="flex flex-col text-xl w-full h-auto mt-2 py-10 px-2 justify-center items-center bg-gray-200 rounded text-center text-gray-600">
         <img
-            v-bind:src="'./src/assets/' + img"
+            v-bind:src="img"
             v-bind:alt="img"
             class="object-cover mb-6 max-h-80 rounded"
         />
