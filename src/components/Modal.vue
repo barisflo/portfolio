@@ -1,5 +1,5 @@
 <template>
-  <dialog :id="modal" class="h-2/3 w-11/12 md:w-1/2 p-5 bg-white rounded-md" @click="close">
+  <dialog :id="modal" class="w-11/12 xl:w-1/2 md:w-3/4 p-5 bg-white rounded-md" @click="close">
     <div class="flex flex-col w-full h-auto" @click.stop>
       <!-- Header -->
       <div class="flex w-full h-auto justify-center items-center">
@@ -13,19 +13,38 @@
       </div>
       <!-- Modal Content-->
       <div class="flex flex-col text-xl w-full h-auto mt-2 py-10 px-2 justify-center items-center bg-gray-200 rounded text-center text-gray-600">
-        <img
-            v-bind:src="img"
-            v-bind:alt="img"
-            class="object-cover mb-6 max-h-80 rounded"
-        />
         <div v-if="getCookie('lang') == 'eng'">{{ desc }}</div>
         <div v-if="getCookie('lang') == 'kr'">{{ descKR }}</div>
+        <div class="flex flex-col lg:flex-row">
+          <img
+          v-bind:src="img"
+          v-bind:alt="img"
+          class="object-cover my-6 max-h-80 rounded lg:w-3/4 ml-4"
+          />
+          <div class="m-6 mt-0 lg:mt-12 text-left">
+            <span v-if="getCookie('lang') == 'eng'">{{ longdesc }}</span>
+            <span v-if="getCookie('lang') == 'kr'">{{ longdescKR }}</span>
+          </div>
+        </div>
+        <div class="flex justify-center align-middle">
+          <div class="space-x-2 justify-center">
+          <div v-for="tag in tags" :key="tag" class="bg-azure px-3 py-1 font-semibold text-sm inline-flex rounded-full">
+            {{ tag }}
+          </div>
+        </div>
+        <a :href="link" target="_blank" class="ml-5">
+          <button class="bg-celadonBlue hover:bg-prussianBlue">
+            <span>Open Link</span>
+          </button>
+        </a>
+        </div>
       </div>
-      <a :href="link" target="_blank" class="m-auto mt-6">
+
+      <!-- <a :href="link" target="_blank" class="m-auto mt-6">
         <button class="bg-celadonBlue hover:bg-prussianBlue">
           <span>Open Link</span>
         </button>
-      </a>
+      </a> -->
       <!-- End of Modal Content-->
     </div>
   </dialog>
@@ -41,7 +60,9 @@ export default {
     year: String,
     link: String,
     desc: String,
-    descKR: String,
+    descKR: String,    
+    longdesc: String,
+    longdescKR: String,
     img: String,
     tags: Array,
   },
