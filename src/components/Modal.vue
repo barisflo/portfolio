@@ -1,5 +1,5 @@
 <template>
-  <dialog :id="modal" class="w-11/12 xl:w-1/2 md:w-3/4 p-5 bg-white rounded-md" @click="close">
+  <dialog :id="modal" class="w-11/12 2xl:w-1/2 lg:w-3/4 p-5 bg-white rounded-md" @click="close">
     <div class="flex flex-col w-full h-auto" @click.stop>
       <!-- Header -->
       <div class="flex w-full h-auto justify-center items-center">
@@ -13,15 +13,15 @@
       </div>
       <!-- Modal Content-->
       <div class="flex flex-col text-xl w-full h-auto mt-2 py-10 px-2 justify-center items-center bg-gray-200 rounded text-center text-gray-600">
-        <div v-if="getCookie('lang') == 'eng'">{{ desc }}</div>
-        <div v-if="getCookie('lang') == 'kr'">{{ descKR }}</div>
+        <div class="font-bold" v-if="getCookie('lang') == 'eng'">{{ desc }}</div>
+        <div class="font-bold" v-if="getCookie('lang') == 'kr'">{{ descKR }}</div>
         <div class="flex flex-col lg:flex-row">
           <img
           v-bind:src="img"
           v-bind:alt="img"
           class="object-cover my-6 max-h-80 rounded lg:w-3/4 ml-4"
-          />
-          <div class="m-6 mt-0 lg:mt-12 text-left">
+          /> 
+          <div class="m-6 mt-0 lg:mt-12 lg:text-left lg:w-1/2">
             <span v-if="getCookie('lang') == 'eng'">{{ longdesc }}</span>
             <span v-if="getCookie('lang') == 'kr'">{{ longdescKR }}</span>
           </div>
