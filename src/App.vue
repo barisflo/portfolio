@@ -29,7 +29,6 @@ import Arrow from '@/components/Arrow.vue'
 import Testimonial from "@/components/Testimonial.vue";
 import ContactMe from "@/components/ContactMe.vue";
 import Companies from "@/components/Companies.vue";
-//import Agile from "@/components/Agile";
 
 export default {
   name: 'App',
