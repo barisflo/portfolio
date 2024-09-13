@@ -3,6 +3,11 @@
     <h2 v-if="getCookie('lang') === 'eng'" class="text-3xl mt-6 mb-8 md:mt-10 md:mb-12 text-center">Featured Projects</h2>
     <h2 v-if="getCookie('lang') === 'kr'" class="text-3xl mt-6 mb-8 md:mt-10 md:mb-12 text-center">특징 프로젝트</h2>
     <div class="flex flex-wrap justify-center">
+      <Card :img="BR" link="https://play.google.com/store/apps/details?id=com.gamevrest.BarriersQuad" cardtitle="Barrier Squad" year="2024" v-bind:tags="['Unity', 'Android']"
+            desc="Mobile Game, tower defense like, usage of AI generated images"
+            descKR="모바일 게임, 타워 방어 같은 것"
+            longdesc="My first relatively ambitious mobile game project I keep updating as I gain knowledge in game development, started originally in 2019"
+            longdescKR="게임 개발 지식을 얻으면서 계속 업데이트한 첫 번째 비교적 야심찬 모바일 게임 프로젝트입니다. 원래는 2019년에 시작되었습니다."/>
       <Card :img="PR" link="https://gamevrest.com/" cardtitle="Premier Servi" year="2023" v-bind:tags="['Unity', 'Content creation', 'AI']"
             desc="Premier Servi, use of AI generated assets, ongoing"
             descKR="Premier Servi, AI 생성 자산의 사용, 지속적인"
@@ -41,11 +46,6 @@
             longdesc="Student project made as a team of 5, game design and project management, Unity"
             longdescKR="Unity를 사용하여 5인 팀으로 만든 학생 프로젝트입니다. 게임 디자인과 프로젝트 관리를 담당했습니다"
             />
-      <Card :img="BR" link="https://gamepipe.io/@barisf/barrier-squad" cardtitle="Barrier Squad" year="2019" v-bind:tags="['Unity', 'Android']"
-            desc="Mobile Game, tower defense like, usage of AI generated images"
-            descKR="모바일 게임, 타워 방어 같은 것"
-            longdesc="My first relatively ambitious mobile game project I keep updating as I gein knowledge in game development"
-            longdescKR="게임 개발 지식을 얻으면서 계속 업데이트한 첫 번째 비교적 야심찬 모바일 게임 프로젝트입니다"/>
       <Card :img="PCR" link="https://gamepipe.io/@barisf/pcr-defender" cardtitle="PCR Defender" year="2015" v-bind:tags="['Unity', 'C#']"
             desc="Promotional video game for C2i santé"
             descKR="C2isanté 홍보용 비디오 게임"
