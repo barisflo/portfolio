@@ -12,6 +12,9 @@
           <NuxtLink to="#contact" class="text-prussianBlue hover:text-celadonBlue transition-colors">
             {{ language === 'en' ? 'Contact' : '연락처' }}
           </NuxtLink>
+          <NuxtLink to="/resume" class="text-prussianBlue hover:text-celadonBlue transition-colors">
+            {{ language === 'en' ? 'Resume' : '이력서' }}
+          </NuxtLink>
         </div>
         
         <div class="flex items-center space-x-2">
