@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-md font-medium transition-colors duration-200;
+  }
+  
+  .btn-primary {
+    @apply bg-celadonBlue hover:bg-prussianBlue text-white;
+  }
+}
+
+/* Custom colors and base styles */
+:root {
+  --imperial-red: #E63946;
+  --apricot: #FFD6BA;
+  --cultured: #FAF9F9;
+  --azure: #eef9fa;
+  --powder-blue: #A8DADC;
+  --celadon-blue: #457B9D;
+  --prussian-blue: #1D3557;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -80px;
+  visibility: hidden;
+}
