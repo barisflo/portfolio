@@ -97,16 +97,21 @@ const closeModal = () => {
 }
 
 // Close modal on escape key
-onMounted(() => {
-  const handleEscape = (e: KeyboardEvent) => {
-    if (e.key === 'Escape') {
-      closeModal()
-    }
+const handleEscape = (e: KeyboardEvent) => {
+  if (e.key === 'Escape') {
+    closeModal()
   }
-  document.addEventListener('keydown', handleEscape)
-  
-  onUnmounted(() => {
+}
+
+onMounted(() => {
+  if (process.client) {
+    document.addEventListener('keydown', handleEscape)
+  }
+})
+
+onUnmounted(() => {
+  if (process.client) {
     document.removeEventListener('keydown', handleEscape)
-  })
+  }
 })
 </script>
