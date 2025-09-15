@@ -104,13 +104,13 @@ const handleEscape = (e: KeyboardEvent) => {
 }
 
 onMounted(() => {
-  if (process.client) {
+  if (import.meta.client) {
     document.addEventListener('keydown', handleEscape)
   }
 })
 
 onUnmounted(() => {
-  if (process.client) {
+  if (import.meta.client) {
     document.removeEventListener('keydown', handleEscape)
   }
 })

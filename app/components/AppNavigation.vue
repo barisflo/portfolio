@@ -3,13 +3,13 @@
     <div class="container mx-auto px-4 py-3">
       <div class="flex justify-between items-center">
         <div class="flex items-center space-x-6">
-          <NuxtLink to="#about" class="text-prussianBlue hover:text-celadonBlue transition-colors">
+          <NuxtLink :to="getNavLink('about')" class="text-prussianBlue hover:text-celadonBlue transition-colors">
             {{ language === 'en' ? 'About' : '소개' }}
           </NuxtLink>
-          <NuxtLink to="#projects" class="text-prussianBlue hover:text-celadonBlue transition-colors">
+          <NuxtLink :to="getNavLink('projects')" class="text-prussianBlue hover:text-celadonBlue transition-colors">
             {{ language === 'en' ? 'Projects' : '프로젝트' }}
           </NuxtLink>
-          <NuxtLink to="#contact" class="text-prussianBlue hover:text-celadonBlue transition-colors">
+          <NuxtLink :to="getNavLink('contact')" class="text-prussianBlue hover:text-celadonBlue transition-colors">
             {{ language === 'en' ? 'Contact' : '연락처' }}
           </NuxtLink>
           <NuxtLink to="/resume" class="text-prussianBlue hover:text-celadonBlue transition-colors">
@@ -33,10 +33,20 @@
   </nav>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const { language, setLanguage } = useLanguage()
+const route = useRoute()
 
 const toggleLanguage = () => {
   setLanguage(language.value === 'en' ? 'kr' : 'en')
+}
+
+const getNavLink = (section: string) => {
+  // If we're on the resume page, navigate back to home with the anchor
+  if (route.path === '/resume') {
+    return `/#${section}`
+  }
+  // If we're on the home page, just use the anchor
+  return `#${section}`
 }
 </script>
