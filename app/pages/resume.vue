@@ -86,186 +86,9 @@ const printResume = () => {
   }, 1000)
 }
 
-const generatePDF = async () => {
-  if (!html2canvas || !jsPDF) {
-    console.warn('PDF libraries not loaded, falling back to print')
-    window.print()
-    return
-  }
-
-  try {
-    const resumeContent = document.getElementById('resume-content')
-    if (!resumeContent) return
-
-    // Create a temporary container with proper styling for PDF
-    const tempContainer = document.createElement('div')
-    tempContainer.style.position = 'absolute'
-    tempContainer.style.left = '-9999px'
-    tempContainer.style.top = '0'
-    tempContainer.style.width = '794px' // A4 width at 96 DPI (210mm)
-    tempContainer.style.backgroundColor = 'white'
-    tempContainer.style.padding = '40px'
-    tempContainer.style.fontFamily = 'system-ui, -apple-system, sans-serif'
-    tempContainer.style.fontSize = '14px'
-    tempContainer.style.lineHeight = '1.4'
-    
-    // Clone the resume content
-    const clonedContent = resumeContent.cloneNode(true) as HTMLElement
-    
-    // Apply PDF-specific styles to the cloned content
-    const style = document.createElement('style')
-    style.textContent = `
-      .temp-pdf-container * {
-        -webkit-print-color-adjust: exact !important;
-        print-color-adjust: exact !important;
-      }
-      /* Header layout fixes */
-      .temp-pdf-container .flex.flex-col.md\\:flex-row {
-        display: flex !important;
-        flex-direction: row !important;
-        align-items: flex-start !important;
-        gap: 24px !important;
-      }
-      .temp-pdf-container .text-center.md\\:text-left {
-        text-align: left !important;
-      }
-      .temp-pdf-container .justify-center.md\\:justify-start {
-        justify-content: flex-start !important;
-      }
-      .temp-pdf-container .flex-shrink-0 {
-        flex-shrink: 0 !important;
-        margin-right: 24px !important;
-      }
-      /* Experience date alignment fixes */
-      .temp-pdf-container .md\\:justify-between {
-        display: flex !important;
-        justify-content: space-between !important;
-        align-items: flex-start !important;
-        width: 100% !important;
-      }
-      .temp-pdf-container .md\\:items-start {
-        align-items: flex-start !important;
-      }
-      /* Skills grid layout - force 2 columns for skills, 3 for languages */
-      .temp-pdf-container .grid.grid-cols-1.md\\:grid-cols-2 {
-        display: grid !important;
-        grid-template-columns: 1fr 1fr !important;
-        gap: 32px !important;
-      }
-      .temp-pdf-container .grid.grid-cols-1.md\\:grid-cols-3 {
-        display: grid !important;
-        grid-template-columns: 1fr 1fr 1fr !important;
-        gap: 16px !important;
-      }
-      /* Compact spacing for PDF */
-      .temp-pdf-container .mb-8 {
-        margin-bottom: 24px !important;
-      }
-      .temp-pdf-container .mb-6 {
-        margin-bottom: 16px !important;
-      }
-      .temp-pdf-container .mb-4 {
-        margin-bottom: 12px !important;
-      }
-      .temp-pdf-container .space-y-6 > * + * {
-        margin-top: 20px !important;
-      }
-      .temp-pdf-container .space-y-3 > * + * {
-        margin-top: 8px !important;
-      }
-      .temp-pdf-container a {
-        color: #457B9D !important;
-        text-decoration: none !important;
-      }
-      /* Ensure proper text sizing */
-      .temp-pdf-container .text-4xl {
-        font-size: 28px !important;
-        line-height: 32px !important;
-      }
-      .temp-pdf-container .text-2xl {
-        font-size: 20px !important;
-        line-height: 24px !important;
-      }
-      .temp-pdf-container .text-xl {
-        font-size: 18px !important;
-        line-height: 22px !important;
-      }
-      .temp-pdf-container .text-lg {
-        font-size: 16px !important;
-        line-height: 20px !important;
-      }
-    `
-    
-    tempContainer.className = 'temp-pdf-container'
-    tempContainer.appendChild(style)
-    tempContainer.appendChild(clonedContent)
-    document.body.appendChild(tempContainer)
-
-    // Wait for fonts and images to load
-    await new Promise(resolve => setTimeout(resolve, 100))
-
-    // Generate canvas from the temporary container
-    const canvas = await html2canvas(tempContainer, {
-      scale: 1.5,
-      useCORS: true,
-      allowTaint: true,
-      backgroundColor: '#ffffff',
-      width: tempContainer.offsetWidth,
-      height: tempContainer.offsetHeight,
-      logging: false,
-      removeContainer: false
-    })
-
-    // Remove temporary container
-    document.body.removeChild(tempContainer)
-
-    // Create PDF with proper margins and no browser artifacts
-    const pdf = new jsPDF({
-      orientation: 'portrait',
-      unit: 'mm',
-      format: 'a4',
-      compress: true
-    })
-
-    // Calculate dimensions to fit content properly
-    const imgWidth = 210 // A4 width in mm
-    const pageHeight = 297 // A4 height in mm
-    const margins = 10 // 10mm margins
-    const contentWidth = imgWidth - (margins * 2)
-    const imgHeight = (canvas.height * contentWidth) / canvas.width
-    
-    let heightLeft = imgHeight
-    let position = 0
-
-    // Add first page with margins
-    pdf.addImage(canvas.toDataURL('image/png', 0.95), 'PNG', margins, margins, contentWidth, imgHeight)
-    heightLeft -= (pageHeight - margins * 2)
-
-    // Add additional pages if needed
-    while (heightLeft >= 0) {
-      position = heightLeft - imgHeight
-      pdf.addPage()
-      pdf.addImage(canvas.toDataURL('image/png', 0.95), 'PNG', margins, position + margins, contentWidth, imgHeight)
-      heightLeft -= (pageHeight - margins * 2)
-    }
-
-    // Add metadata to prevent browser artifacts
-    pdf.setProperties({
-      title: `Florent Baris - Resume (${language.value === 'en' ? 'English' : 'Korean'})`,
-      subject: 'Professional Resume',
-      author: 'Florent Baris',
-      creator: 'Portfolio Website',
-      producer: 'jsPDF'
-    })
-
-    // Download the PDF
-    pdf.save(`Florent_Baris_Resume_${language.value === 'en' ? 'EN' : 'KR'}.pdf`)
-
-  } catch (error) {
-    console.error('Error generating PDF:', error)
-    // Fallback to print
-    window.print()
-  }
+const generatePDF = () => {
+  // Use the same print process as Print Resume
+  printResume()
 }
 </script>
 
@@ -340,8 +163,16 @@ const generatePDF = async () => {
     align-items: flex-start !important;
   }
   
+  /* Contact info grid - keep 2 columns but reduce gaps */
+  .grid.grid-cols-1.md\:grid-cols-2.gap-2 {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 4px 16px !important;
+    align-items: start !important;
+  }
+  
   /* Skills grid layout - maintain columns in print */
-  .grid.grid-cols-1.md\:grid-cols-2 {
+  .grid.grid-cols-1.md\:grid-cols-2:not(.gap-2) {
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
     gap: 2rem !important;

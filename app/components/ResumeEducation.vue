@@ -68,35 +68,27 @@
       <div class="space-y-3">
         <div class="flex flex-col md:flex-row md:justify-between">
           <span class="font-medium text-gray-800">
-            {{ language === 'en' ? 'Agile & Scrum Methodology' : '애자일 & 스크럼 방법론' }}
-          </span>
-          <span class="text-gray-600">2021</span>
-        </div>
-        <div class="flex flex-col md:flex-row md:justify-between">
-          <span class="font-medium text-gray-800">
-            {{ language === 'en' ? 'Advanced Vue.js Development' : '고급 Vue.js 개발' }}
-          </span>
-          <span class="text-gray-600">2022</span>
-        </div>
-        <div class="flex flex-col md:flex-row md:justify-between">
-          <span class="font-medium text-gray-800">
-            {{ language === 'en' ? 'Unity Certified Developer' : 'Unity 공인 개발자' }}
-          </span>
-          <span class="text-gray-600">2020</span>
-        </div>
-        <div class="flex flex-col md:flex-row md:justify-between">
-          <span class="font-medium text-gray-800">
-            {{ language === 'en' ? 'Digital Transformation Leadership' : '디지털 변환 리더십' }}
-          </span>
-          <span class="text-gray-600">2021</span>
-        </div>
-        <div class="flex flex-col md:flex-row md:justify-between">
-          <span class="font-medium text-gray-800">
-            <a href="https://korean.sogang.ac.kr" target="_blank" rel="noopener noreferrer" class="hover:underline">
+            <a href="https://klec.sogang.ac.kr/" target="_blank" rel="noopener noreferrer" class="hover:underline">
               {{ language === 'en' ? 'Sogang Korean Language Program - Level 6' : '서강대학교 한국어교육원 - 6급' }}
             </a>
           </span>
           <span class="text-gray-600">2024</span>
+        </div>
+        <div class="flex flex-col md:flex-row md:justify-between">
+          <span class="font-medium text-gray-800">
+            <a href="https://masteringnuxt.com/nuxt3" target="_blank" rel="noopener noreferrer" class="hover:underline">
+              {{ language === 'en' ? 'Mastering Nuxt 3 - Complete Course' : 'Mastering Nuxt 3 - 완전한 과정' }}
+            </a>
+          </span>
+          <span class="text-gray-600">2023</span>
+        </div>
+        <div class="flex flex-col md:flex-row md:justify-between">
+          <span class="font-medium text-gray-800">
+            <a href="https://www.ionis-stm.com" target="_blank" rel="noopener noreferrer" class="hover:underline">
+              {{ language === 'en' ? 'Teaching & Coaching Formation - Ionis-STM' : '교육 & 코칭 과정 - Ionis-STM' }}
+            </a>
+          </span>
+          <span class="text-gray-600">2018</span>
         </div>
       </div>
     </div>

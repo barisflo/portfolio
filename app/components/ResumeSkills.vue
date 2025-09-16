@@ -33,16 +33,6 @@
           
           <div class="skill-item">
             <div class="flex justify-between items-center mb-1">
-              <span class="font-medium">HTML5 / CSS3</span>
-              <span class="text-sm text-gray-600">{{ language === 'en' ? 'Expert' : '전문가' }}</span>
-            </div>
-            <div class="w-full bg-gray-200 rounded-full h-2">
-              <div class="bg-celadonBlue h-2 rounded-full" style="width: 95%"></div>
-            </div>
-          </div>
-          
-          <div class="skill-item">
-            <div class="flex justify-between items-center mb-1">
               <span class="font-medium">TailwindCSS</span>
               <span class="text-sm text-gray-600">{{ language === 'en' ? 'Advanced' : '고급' }}</span>
             </div>
@@ -50,6 +40,17 @@
               <div class="bg-celadonBlue h-2 rounded-full" style="width: 85%"></div>
             </div>
           </div>
+          
+          <div class="skill-item">
+            <div class="flex justify-between items-center mb-1">
+              <span class="font-medium">UI / UX Design</span>
+              <span class="text-sm text-gray-600">{{ language === 'en' ? 'Intermediate' : '중급' }}</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2">
+              <div class="bg-celadonBlue h-2 rounded-full" style="width: 70%"></div>
+            </div>
+          </div>
+          
         </div>
       </div>
 
@@ -66,16 +67,6 @@
             </div>
             <div class="w-full bg-gray-200 rounded-full h-2">
               <div class="bg-celadonBlue h-2 rounded-full" style="width: 80%"></div>
-            </div>
-          </div>
-          
-          <div class="skill-item">
-            <div class="flex justify-between items-center mb-1">
-              <span class="font-medium">Laravel / PHP</span>
-              <span class="text-sm text-gray-600">{{ language === 'en' ? 'Intermediate' : '중급' }}</span>
-            </div>
-            <div class="w-full bg-gray-200 rounded-full h-2">
-              <div class="bg-celadonBlue h-2 rounded-full" style="width: 70%"></div>
             </div>
           </div>
           
@@ -157,31 +148,21 @@
           
           <div class="skill-item">
             <div class="flex justify-between items-center mb-1">
-              <span class="font-medium">Docker</span>
-              <span class="text-sm text-gray-600">{{ language === 'en' ? 'Intermediate' : '중급' }}</span>
+              <span class="font-medium">AI Tools & Integration</span>
+              <span class="text-sm text-gray-600">{{ language === 'en' ? 'Advanced' : '고급' }}</span>
             </div>
             <div class="w-full bg-gray-200 rounded-full h-2">
-              <div class="bg-celadonBlue h-2 rounded-full" style="width: 65%"></div>
+              <div class="bg-celadonBlue h-2 rounded-full" style="width: 80%"></div>
             </div>
           </div>
           
           <div class="skill-item">
             <div class="flex justify-between items-center mb-1">
               <span class="font-medium">Web3 / Blockchain</span>
-              <span class="text-sm text-gray-600">{{ language === 'en' ? 'Intermediate' : '중급' }}</span>
+              <span class="text-sm text-gray-600">{{ language === 'en' ? 'Beginner' : '초급' }}</span>
             </div>
             <div class="w-full bg-gray-200 rounded-full h-2">
-              <div class="bg-celadonBlue h-2 rounded-full" style="width: 70%"></div>
-            </div>
-          </div>
-          
-          <div class="skill-item">
-            <div class="flex justify-between items-center mb-1">
-              <span class="font-medium">AI Tools & Integration</span>
-              <span class="text-sm text-gray-600">{{ language === 'en' ? 'Advanced' : '고급' }}</span>
-            </div>
-            <div class="w-full bg-gray-200 rounded-full h-2">
-              <div class="bg-celadonBlue h-2 rounded-full" style="width: 80%"></div>
+              <div class="bg-celadonBlue h-2 rounded-full" style="width: 40%"></div>
             </div>
           </div>
         </div>

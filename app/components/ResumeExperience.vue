@@ -83,13 +83,11 @@
         <ul v-if="language === 'en'" class="text-gray-700 space-y-2">
           <li>• Contributed to Kresus Vue.js toolkit development</li>
           <li>• Implemented modern UI components with Vue 3 and TailwindCSS</li>
-          <li>• Collaborated with the open-source community</li>
           <li>• Enhanced user experience and interface responsiveness</li>
         </ul>
         <ul v-else class="text-gray-700 space-y-2">
-          <li>• Kresus Vue.js 툴킷 개발에 기여</li>
+          <li>• Kresus 프로젝트를 위한 Vue.js 컴포넌트 및 인터페이스 개발</li>
           <li>• Vue 3와 TailwindCSS를 사용한 현대적인 UI 컴포넌트 구현</li>
-          <li>• 오픈소스 커뮤니티와의 협력</li>
           <li>• 사용자 경험 및 인터페이스 반응성 향상</li>
         </ul>
       </div>

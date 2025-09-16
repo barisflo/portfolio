@@ -9,7 +9,9 @@
       <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer" @click="goToPortfolio">
         <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
           <h3 class="text-xl font-semibold text-prussianBlue hover:text-celadonBlue transition-colors">
-            {{ language === 'en' ? 'Barrier Squad - Mobile Tower Defense' : 'Barrier Squad - 모바일 타워 디펜스' }}
+            <a href="https://play.google.com/store/apps/details?id=com.gamevrest.BarriersQuad" target="_blank" rel="noopener noreferrer" class="hover:underline">
+              {{ language === 'en' ? 'Barrier Squad - Mobile Tower Defense' : 'Barrier Squad - 모바일 타워 디펜스' }}
+            </a>
           </h3>
           <span class="text-gray-600 font-medium">2024</span>
         </div>
@@ -33,7 +35,9 @@
       <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer" @click="goToPortfolio">
         <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
           <h3 class="text-xl font-semibold text-prussianBlue hover:text-celadonBlue transition-colors">
-            {{ language === 'en' ? 'Kresus Vue.js Toolkit' : 'Kresus Vue.js 툴킷' }}
+            <a href="https://www.kresus.eu/" target="_blank" rel="noopener noreferrer" class="hover:underline">
+              {{ language === 'en' ? 'Kresus Vue.js Toolkit' : 'Kresus Vue.js 툴킷' }}
+            </a>
           </h3>
           <span class="text-gray-600 font-medium">2023</span>
         </div>
@@ -56,7 +60,9 @@
       <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer" @click="goToPortfolio">
         <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
           <h3 class="text-xl font-semibold text-prussianBlue hover:text-celadonBlue transition-colors">
-            {{ language === 'en' ? 'Datanest - Decentralized Data Marketplace' : 'Datanest - 탈중앙화 데이터 마켓플레이스' }}
+            <a href="https://github.com/baris-f/PBWS-DataNFT" target="_blank" rel="noopener noreferrer" class="hover:underline">
+              {{ language === 'en' ? 'Datanest - Decentralized Data Marketplace' : 'Datanest - 탈중앙화 데이터 마켓플레이스' }}
+            </a>
           </h3>
           <span class="text-gray-600 font-medium">2022</span>
         </div>
@@ -80,7 +86,9 @@
       <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer" @click="goToPortfolio">
         <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
           <h3 class="text-xl font-semibold text-prussianBlue hover:text-celadonBlue transition-colors">
-            {{ language === 'en' ? 'ArtificialVideo YouTube Channel' : 'ArtificialVideo 유튜브 채널' }}
+            <a href="https://www.youtube.com/@ARTificialVideo/videos" target="_blank" rel="noopener noreferrer" class="hover:underline">
+              {{ language === 'en' ? 'ArtificialVideo YouTube Channel' : 'ArtificialVideo 유튜브 채널' }}
+            </a>
           </h3>
           <span class="text-gray-600 font-medium">2022 - {{ language === 'en' ? 'Present' : '현재' }}</span>
         </div>
@@ -104,7 +112,9 @@
       <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer" @click="goToPortfolio">
         <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
           <h3 class="text-xl font-semibold text-prussianBlue hover:text-celadonBlue transition-colors">
-            {{ language === 'en' ? 'Moonolith - Blockchain Pixel Art' : 'Moonolith - 블록체인 픽셀 아트' }}
+            <a href="https://www.moonolith.io/" target="_blank" rel="noopener noreferrer" class="hover:underline">
+              {{ language === 'en' ? 'Moonolith - Blockchain Pixel Art' : 'Moonolith - 블록체인 픽셀 아트' }}
+            </a>
           </h3>
           <span class="text-gray-600 font-medium">2022</span>
         </div>
@@ -128,7 +138,9 @@
       <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer" @click="goToPortfolio">
         <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
           <h3 class="text-xl font-semibold text-prussianBlue hover:text-celadonBlue transition-colors">
-            {{ language === 'en' ? 'GamePipe - Gaming Platform' : 'GamePipe - 게이밍 플랫폼' }}
+            <a href="https://gamepipe.io/" target="_blank" rel="noopener noreferrer" class="hover:underline">
+              {{ language === 'en' ? 'GamePipe - Gaming Platform' : 'GamePipe - 게이밍 플랫폼' }}
+            </a>
           </h3>
           <span class="text-gray-600 font-medium">2021</span>
         </div>
