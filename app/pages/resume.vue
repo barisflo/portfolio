@@ -13,9 +13,10 @@
           <button @click="printResume" class="btn btn-primary flex items-center">
             <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>{{ language === 'en' ? 'Print Resume' : '이력서 출력' }}
           </button>
-          <button @click="generatePDF" class="btn bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md flex items-center">
+          <!-- Download PDF button commented out - same functionality as Print Resume for now -->
+          <!-- <button @click="generatePDF" class="btn bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md flex items-center">
             <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>{{ language === 'en' ? 'Download PDF' : 'PDF 다운로드' }}
-          </button>
+          </button> -->
         </div>
       </div>
 
@@ -219,6 +220,141 @@ const generatePDF = () => {
   * {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
+  }
+  
+  /* Scale down content to fit more on page */
+  body {
+    transform: scale(0.85) !important;
+    transform-origin: top left !important;
+    width: 117.6% !important; /* Compensate for scale */
+    margin: 0 !important;
+    overflow: hidden !important;
+  }
+  
+  /* Prevent extra pages */
+  html, body {
+    height: auto !important;
+    max-height: none !important;
+  }
+  
+  /* Ensure content doesn't create extra pages */
+  .max-w-4xl {
+    overflow: hidden !important;
+    page-break-after: avoid !important;
+  }
+  
+  /* Compact experience layout - single line */
+  .experience-header {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  .experience-title-company {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+    font-size: 0.9rem !important;
+  }
+  
+  .experience-date {
+    font-size: 0.8rem !important;
+    white-space: nowrap !important;
+  }
+  
+  /* Hide projects section or make it very compact */
+  .projects-section {
+    display: none !important;
+  }
+  
+  /* Alternative: Show projects as simple bullet list */
+  .projects-compact {
+    display: block !important;
+  }
+  
+  /* Hide education section and show compact version */
+  .education-section {
+    display: none !important;
+  }
+  
+  .education-compact {
+    display: block !important;
+  }
+  
+  .projects-compact ul, .education-compact ul {
+    margin: 0 !important;
+    padding-left: 1.5rem !important;
+  }
+  
+  .projects-compact li, .education-compact li {
+    margin-bottom: 0.25rem !important;
+    font-size: 0.9rem !important;
+    line-height: 1.3 !important;
+  }
+  
+  /* Compact skills section */
+  .skills-section h3 {
+    font-size: 1rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+  
+  .skills-section .skill-item {
+    margin-bottom: 0.5rem !important;
+  }
+  
+  .skills-section .skill-item .flex {
+    margin-bottom: 0.25rem !important;
+  }
+  
+  .skills-section .font-medium {
+    font-size: 0.85rem !important;
+  }
+  
+  .skills-section .text-sm {
+    font-size: 0.75rem !important;
+  }
+  
+  /* Smaller progress bars */
+  .skills-section .h-2 {
+    height: 0.375rem !important;
+  }
+  
+  /* Compact grid layout for skills */
+  .skills-section .grid {
+    gap: 1rem !important;
+  }
+  
+  .skills-section .space-y-3 > * + * {
+    margin-top: 0.5rem !important;
+  }
+  
+  /* Languages section compact */
+  .skills-section .space-y-2 > * + * {
+    margin-top: 0.25rem !important;
+  }
+  
+  /* Reduce gap between skill grid rows and languages section */
+  .skills-section .grid {
+    margin-bottom: 1rem !important;
+  }
+  
+  /* Reduce gap between grid and languages section */
+  .skills-section > div:last-child {
+    margin-top: 1rem !important;
+  }
+  
+  /* Prevent last sections from creating extra pages */
+  .projects-compact, .education-compact {
+    page-break-after: avoid !important;
+    margin-bottom: 0 !important;
+  }
+  
+  /* Remove bottom margins from last elements */
+  section:last-child {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
   }
 }
 </style>

@@ -7,146 +7,136 @@
     <div class="space-y-6">
       <!-- Experience Item 1 - FromTheRed -->
       <div class="border-l-4 border-celadonBlue pl-6">
-        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-          <h3 class="text-xl font-semibold text-prussianBlue">
-            {{ language === 'en' ? 'Fullstack Developer' : '풀스택 개발자' }}
-          </h3>
-          <span class="text-gray-600 font-medium">
+        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2 experience-header">
+          <div class="experience-title-company">
+            <h3 class="text-xl font-semibold text-prussianBlue">
+              {{ language === 'en' ? 'Fullstack Developer' : '풀스택 개발자' }}
+            </h3>
+            <span class="text-celadonBlue font-medium">
+              - <a href="https://fromthered.com" target="_blank" rel="noopener noreferrer" class="hover:underline">
+                FromTheRed
+              </a>
+            </span>
+          </div>
+          <span class="text-gray-600 font-medium experience-date">
             {{ language === 'en' ? '2024 - Present' : '2024 - 현재' }}
           </span>
         </div>
-        <p class="text-celadonBlue font-medium mb-3">
-          <a href="https://fromthered.com" target="_blank" rel="noopener noreferrer" class="hover:underline">
-            FromTheRed
-          </a>
-        </p>
         <ul v-if="language === 'en'" class="text-gray-700 space-y-2">
-          <li>• Developed and maintained web applications using modern JavaScript frameworks</li>
-          <li>• Collaborated with cross-functional teams on digital transformation projects</li>
-          <li>• Implemented responsive designs and optimized user experience</li>
-          <li>• Worked on both frontend and backend development tasks</li>
-          <li>• Contributed to code reviews and maintained high code quality standards</li>
+          <li>• Worked on <a href="https://zempie.com" target="_blank" rel="noopener noreferrer" class="text-celadonBlue hover:underline">Zempie Website</a>, as a developer and PM Nuxt.js / TailwindCSS</li>
+          <li>• Events and indie game developer related</li>
+          <li>• Overcame language issue and had to adaptto Korean working environment</li>
         </ul>
         <ul v-else class="text-gray-700 space-y-2">
-          <li>• 현대적인 JavaScript 프레임워크를 사용한 웹 애플리케이션 개발 및 유지보수</li>
-          <li>• 디지털 변환 프로젝트에서 다기능 팀과 협력</li>
-          <li>• 반응형 디자인 구현 및 사용자 경험 최적화</li>
-          <li>• 프론트엔드 및 백엔드 개발 업무 수행</li>
-          <li>• 코드 리뷰에 기여하고 높은 코드 품질 기준 유지</li>
+          <li>• <a href="https://zempie.com" target="_blank" rel="noopener noreferrer" class="text-celadonBlue hover:underline">Zempie Website</a>를 개발 및 PM, Nuxt.js / TailwindCSS</li>
+          <li>• 이벤트 및 인디 게임 개발자 관련</li>
+          <li>• 언어 문제를 극복하고 한국 근무 환경에 적응</li>
         </ul>
       </div>
 
       <!-- Experience Item 2 -->
       <div class="border-l-4 border-celadonBlue pl-6">
-        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-          <h3 class="text-xl font-semibold text-prussianBlue">
-            {{ language === 'en' ? 'Freelance Fullstack Developer' : '프리랜스 풀스택 개발자' }}
-          </h3>
-          <span class="text-gray-600 font-medium">
+        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2 experience-header">
+          <div class="experience-title-company">
+            <h3 class="text-xl font-semibold text-prussianBlue">
+              {{ language === 'en' ? 'Freelance Fullstack Developer' : '프리랜스 풀스택 개발자' }}
+            </h3>
+            <span class="text-celadonBlue font-medium">
+              - {{ language === 'en' ? 'Self-Employed' : '개인 사업' }}
+            </span>
+          </div>
+          <span class="text-gray-600 font-medium experience-date">
             {{ language === 'en' ? '2022 - 2024' : '2022 - 2024' }}
           </span>
         </div>
-        <p class="text-celadonBlue font-medium mb-3">
-          {{ language === 'en' ? 'Self-Employed' : '개인 사업' }}
-        </p>
         <ul v-if="language === 'en'" class="text-gray-700 space-y-2">
-          <li>• Developed multiple web applications using Vue.js, Nuxt.js, and modern JavaScript frameworks</li>
-          <li>• Created mobile games and applications using Unity and C#</li>
-          <li>• Implemented responsive designs with TailwindCSS and modern CSS techniques</li>
-          <li>• Worked on blockchain and Web3 projects including NFT marketplaces</li>
-          <li>• Collaborated with clients on digital transformation initiatives</li>
+          <li>• <a href="https://www.kresus.eu/" target="_blank" rel="noopener noreferrer" class="text-celadonBlue hover:underline">Kresus</a> UI toolkit using storybook, Nuxt.js / TailwindCSS</li>
+          <li>• AI images related projects</li>
         </ul>
         <ul v-else class="text-gray-700 space-y-2">
-          <li>• Vue.js, Nuxt.js 및 현대적인 JavaScript 프레임워크를 사용한 웹 애플리케이션 개발</li>
-          <li>• Unity와 C#을 사용한 모바일 게임 및 애플리케이션 제작</li>
-          <li>• TailwindCSS와 현대적인 CSS 기법을 활용한 반응형 디자인 구현</li>
-          <li>• NFT 마켓플레이스를 포함한 블록체인 및 Web3 프로젝트 작업</li>
-          <li>• 고객과의 디지털 변환 이니셔티브 협력</li>
+          <li>• <a href="https://www.kresus.eu/" target="_blank" rel="noopener noreferrer" class="text-celadonBlue hover:underline">Kresus</a> UI 툴킷, 스토리북, Nuxt.js / TailwindCSS 사용</li>
+          <li>• AI 이미지 관련 프로젝트</li>
         </ul>
       </div>
 
-      <!-- Experience Item 3 -->
+      <!-- Experience Item 3 - EPITECH DIGITAL -->
       <div class="border-l-4 border-celadonBlue pl-6">
-        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-          <h3 class="text-xl font-semibold text-prussianBlue">
-            {{ language === 'en' ? 'Vue.js Developer' : 'Vue.js 개발자' }}
-          </h3>
-          <span class="text-gray-600 font-medium">
-            {{ language === 'en' ? '2023' : '2023' }}
+        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2 experience-header">
+          <div class="experience-title-company">
+            <h3 class="text-xl font-semibold text-prussianBlue">
+              {{ language === 'en' ? 'Pedagogic Teacher' : '교육 교사' }}
+            </h3>
+            <span class="text-celadonBlue font-medium">
+              - {{ language === 'en' ? 'EPITECH DIGITAL (CDI)' : 'EPITECH DIGITAL (정규직)' }}
+            </span>
+          </div>
+          <span class="text-gray-600 font-medium experience-date">
+            {{ language === 'en' ? 'September 2020 - June 2022' : '2020년 9월 - 2022년 6월' }}
           </span>
         </div>
-        <p class="text-celadonBlue font-medium mb-3">
-          <a href="https://kresus.org" target="_blank" rel="noopener noreferrer" class="hover:underline">
-            {{ language === 'en' ? 'Kresus (Freelance)' : 'Kresus (프리랜스)' }}
-          </a>
-        </p>
         <ul v-if="language === 'en'" class="text-gray-700 space-y-2">
-          <li>• Contributed to Kresus Vue.js toolkit development</li>
-          <li>• Implemented modern UI components with Vue 3 and TailwindCSS</li>
-          <li>• Enhanced user experience and interface responsiveness</li>
+          <li>• Active participation to the creation of the school</li>
+          <li>• Management of a small team, use of Agile Methods</li>
+          <li>• Teaching in programming and Digital Transformation, Workshops (JS / C#)</li>
         </ul>
         <ul v-else class="text-gray-700 space-y-2">
-          <li>• Kresus 프로젝트를 위한 Vue.js 컴포넌트 및 인터페이스 개발</li>
-          <li>• Vue 3와 TailwindCSS를 사용한 현대적인 UI 컴포넌트 구현</li>
-          <li>• 사용자 경험 및 인터페이스 반응성 향상</li>
+          <li>• 학교 설립에 적극적으로 참여</li>
+          <li>• 프로그래밍 및 디지털 변환 교육</li>
+          <li>• 소규모 팀 관리, 애자일 방법론 사용</li>
+          <li>• 워크샵 및 콘텐츠 제작 (JS / C#)</li>
         </ul>
       </div>
 
-      <!-- Experience Item 4 -->
+      <!-- Experience Item 4 - AGILE PARTNER -->
       <div class="border-l-4 border-celadonBlue pl-6">
-        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-          <h3 class="text-xl font-semibold text-prussianBlue">
-            {{ language === 'en' ? 'Content Creator & Developer' : '콘텐츠 크리에이터 & 개발자' }}
-          </h3>
-          <span class="text-gray-600 font-medium">
-            {{ language === 'en' ? '2022 - Present' : '2022 - 현재' }}
+        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2 experience-header">
+          <div class="experience-title-company">
+            <h3 class="text-xl font-semibold text-prussianBlue">
+              {{ language === 'en' ? 'Developer and Agile Trainee' : '개발자 및 애자일 연수생' }}
+            </h3>
+            <span class="text-celadonBlue font-medium">
+              - {{ language === 'en' ? 'Agile Partner (Internship)' : 'Agile Partner (인턴십)' }}
+            </span>
+          </div>
+          <span class="text-gray-600 font-medium experience-date">
+            {{ language === 'en' ? 'April 2018 - August 2018' : '2018년 4월 - 2018년 8월' }}
           </span>
         </div>
-        <p class="text-celadonBlue font-medium mb-3">
-          <a href="https://youtube.com/@ArtificialVideo" target="_blank" rel="noopener noreferrer" class="hover:underline">
-            {{ language === 'en' ? 'ArtificialVideo YouTube Channel' : 'ArtificialVideo 유튜브 채널' }}
-          </a>
-        </p>
         <ul v-if="language === 'en'" class="text-gray-700 space-y-2">
-          <li>• Built and maintained a YouTube channel with 15,000+ subscribers</li>
-          <li>• Created AI-generated video content using cutting-edge tools</li>
-          <li>• Developed automated content generation workflows with JavaScript</li>
-          <li>• Managed content strategy and audience engagement</li>
+          <li>• Back-end developer C#. Profile manager and CV generator</li>
+          <li>• Multiple formations to agile methods, and practical application</li>
         </ul>
         <ul v-else class="text-gray-700 space-y-2">
-          <li>• 15,000명 이상의 구독자를 보유한 유튜브 채널 구축 및 유지</li>
-          <li>• 최첨단 도구를 사용한 AI 생성 비디오 콘텐츠 제작</li>
-          <li>• JavaScript를 활용한 자동화된 콘텐츠 생성 워크플로우 개발</li>
-          <li>• 콘텐츠 전략 및 오디언스 참여 관리</li>
+          <li>• C# 백엔드 개발자. 프로필 관리자 및 CV 생성기</li>
+          <li>• 애자일 방법론에 대한 다양한 교육 및 실무 적용</li>
         </ul>
       </div>
 
-      <!-- Experience Item 5 -->
+      <!-- Experience Item 5 - C2I SANTÉ -->
       <div class="border-l-4 border-celadonBlue pl-6">
-        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-          <h3 class="text-xl font-semibold text-prussianBlue">
-            {{ language === 'en' ? 'Game Developer' : '게임 개발자' }}
-          </h3>
-          <span class="text-gray-600 font-medium">
-            {{ language === 'en' ? '2015 - Present' : '2015 - 현재' }}
+        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2 experience-header">
+          <div class="experience-title-company">
+            <h3 class="text-xl font-semibold text-prussianBlue">
+              {{ language === 'en' ? 'Mobile Fullstack Developer' : '모바일 풀스택 개발자' }}
+            </h3>
+            <span class="text-celadonBlue font-medium">
+              - {{ language === 'en' ? 'C2I Santé (Internship)' : 'C2I Santé (인턴십)' }}
+            </span>
+          </div>
+          <span class="text-gray-600 font-medium experience-date">
+            {{ language === 'en' ? 'July 2016 - December 2016' : '2016년 7월 - 2016년 12월' }}
           </span>
         </div>
-        <p class="text-celadonBlue font-medium mb-3">
-          {{ language === 'en' ? 'Various Game Jams & Projects' : '다양한 게임 잼 & 프로젝트' }}
-        </p>
         <ul v-if="language === 'en'" class="text-gray-700 space-y-2">
-          <li>• Participated in 10+ game jams over multiple years</li>
-          <li>• Developed games using Unity and C# for various platforms</li>
-          <li>• Created promotional and educational games for companies</li>
-          <li>• Collaborated in multidisciplinary teams as programmer and game designer</li>
+          <li>• C# Application with Unity. Promotional video game, from concept to deployment</li>
+          <li>• Design and publishing of an Android / iOS app</li>
         </ul>
         <ul v-else class="text-gray-700 space-y-2">
-          <li>• 다년간 10개 이상의 게임 잼에 참여</li>
-          <li>• Unity와 C#을 사용하여 다양한 플랫폼용 게임 개발</li>
-          <li>• 기업을 위한 홍보 및 교육용 게임 제작</li>
-          <li>• 프로그래머 및 게임 디자이너로서 다학제 팀에서 협력</li>
+          <li>• Unity를 사용한 C# 애플리케이션. 컨셉부터 배포까지 홍보용 비디오 게임</li>
+          <li>• 안드로이드 / iOS 앱 디자인</li>
         </ul>
       </div>
+
     </div>
   </section>
 </template>

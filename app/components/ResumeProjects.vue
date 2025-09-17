@@ -1,12 +1,12 @@
 <template>
-  <section class="mb-8">
+  <section class="mb-8 projects-section">
     <h2 class="text-2xl font-bold text-prussianBlue border-b border-celadonBlue pb-2 mb-6">
       {{ language === 'en' ? 'Featured Projects' : '주요 프로젝트' }}
     </h2>
 
     <div class="space-y-6">
       <!-- Project 1 -->
-      <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer" @click="goToPortfolio">
+      <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer" @click="openBarrierSquad">
         <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
           <h3 class="text-xl font-semibold text-prussianBlue hover:text-celadonBlue transition-colors">
             <a href="https://play.google.com/store/apps/details?id=com.gamevrest.BarriersQuad" target="_blank" rel="noopener noreferrer" class="hover:underline">
@@ -32,7 +32,7 @@
       </div>
 
       <!-- Project 2 -->
-      <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer" @click="goToPortfolio">
+      <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer" @click="openKresus">
         <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
           <h3 class="text-xl font-semibold text-prussianBlue hover:text-celadonBlue transition-colors">
             <a href="https://www.kresus.eu/" target="_blank" rel="noopener noreferrer" class="hover:underline">
@@ -57,7 +57,7 @@
       </div>
 
       <!-- Project 3 -->
-      <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer" @click="goToPortfolio">
+      <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer" @click="openDatanest">
         <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
           <h3 class="text-xl font-semibold text-prussianBlue hover:text-celadonBlue transition-colors">
             <a href="https://github.com/baris-f/PBWS-DataNFT" target="_blank" rel="noopener noreferrer" class="hover:underline">
@@ -68,11 +68,11 @@
         </div>
         <p v-if="language === 'en'" class="text-gray-700 mb-3">
           Web3 platform for trading data using NFT access tokens. Built with Vue.js frontend 
-          and blockchain integration for secure, decentralized data transactions.
+          and simple blockchain integration.
         </p>
         <p v-else class="text-gray-700 mb-3">
           NFT 액세스 토큰을 사용한 데이터 거래를 위한 Web3 플랫폼. Vue.js 프론트엔드와 
-          안전한 탈중앙화 데이터 거래를 위한 블록체인 통합으로 구축.
+          간단한 블록체인 통합으로 구축.
         </p>
         <div class="flex flex-wrap gap-2">
           <span class="bg-azure px-3 py-1 text-sm rounded-full text-celadonBlue font-medium">Vue.js</span>
@@ -83,7 +83,7 @@
       </div>
 
       <!-- Project 4 -->
-      <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer" @click="goToPortfolio">
+      <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer" @click="openArtificialVideo">
         <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
           <h3 class="text-xl font-semibold text-prussianBlue hover:text-celadonBlue transition-colors">
             <a href="https://www.youtube.com/@ARTificialVideo/videos" target="_blank" rel="noopener noreferrer" class="hover:underline">
@@ -93,12 +93,12 @@
           <span class="text-gray-600 font-medium">2022 - {{ language === 'en' ? 'Present' : '현재' }}</span>
         </div>
         <p v-if="language === 'en'" class="text-gray-700 mb-3">
-          Successful YouTube channel with 15,000+ subscribers focused on AI-generated content. 
-          Developed automated content generation workflows and managed community engagement.
+          YouTube channel with 15,000+ subscribers focused on AI-generated content. 
+          Developed automated content generation workflows and developed a Fiverr activity to sell AI generated images.
         </p>
         <p v-else class="text-gray-700 mb-3">
-          AI 생성 콘텐츠에 중점을 둔 15,000명 이상의 구독자를 보유한 성공적인 유튜브 채널. 
-          자동화된 콘텐츠 생성 워크플로우를 개발하고 커뮤니티 참여를 관리.
+          AI 생성 콘텐츠에 중점을 둔 15,000명 이상의 구독자를 보유한 유튜브 채널. 
+          자동화된 콘텐츠 생성 워크플로우를 개발하고 AI 생성 이미지를 판매하는 Fiverr 활동을 개발.
         </p>
         <div class="flex flex-wrap gap-2">
           <span class="bg-azure px-3 py-1 text-sm rounded-full text-celadonBlue font-medium">JavaScript</span>
@@ -109,7 +109,7 @@
       </div>
 
       <!-- Project 5 -->
-      <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer" @click="goToPortfolio">
+      <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer" @click="openMoonolith">
         <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
           <h3 class="text-xl font-semibold text-prussianBlue hover:text-celadonBlue transition-colors">
             <a href="https://www.moonolith.io/" target="_blank" rel="noopener noreferrer" class="hover:underline">
@@ -135,7 +135,7 @@
       </div>
 
       <!-- Project 6 -->
-      <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer" @click="goToPortfolio">
+      <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer" @click="openGamePipe">
         <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
           <h3 class="text-xl font-semibold text-prussianBlue hover:text-celadonBlue transition-colors">
             <a href="https://gamepipe.io/" target="_blank" rel="noopener noreferrer" class="hover:underline">
@@ -146,11 +146,11 @@
         </div>
         <p v-if="language === 'en'" class="text-gray-700 mb-3">
           Full-stack web platform for playing and hosting video games. 
-          Built with Laravel backend and modern frontend for seamless gaming experience.
+          Built with Laravel backend and TailwindCSS.
         </p>
         <p v-else class="text-gray-700 mb-3">
           비디오 게임을 플레이하고 호스팅하기 위한 풀스택 웹 플랫폼. 
-          원활한 게임 경험을 위해 Laravel 백엔드와 현대적인 프론트엔드로 구축.
+          Laravel 백엔드와 TailwindCSS로 구축.
         </p>
         <div class="flex flex-wrap gap-2">
           <span class="bg-azure px-3 py-1 text-sm rounded-full text-celadonBlue font-medium">Laravel</span>
@@ -161,13 +161,55 @@
       </div>
     </div>
   </section>
+
+  <!-- Compact Projects for Print -->
+  <section class="mb-8 projects-compact" style="display: none;">
+    <h2 class="text-2xl font-bold text-prussianBlue border-b border-celadonBlue pb-2 mb-6">
+      {{ language === 'en' ? 'Featured Projects' : '주요 프로젝트' }}
+    </h2>
+    <ul v-if="language === 'en'" class="text-gray-700">
+      <li>• Barrier Squad - Mobile Tower Defense (Unity, C#, Android, AI Art) 2024</li>
+      <li>• Kresus Vue.js Toolkit (Vue.js, TailwindCSS, Open Source) 2023</li>
+      <li>• Datanest - Decentralized Data Marketplace (Vue.js, Web3, Blockchain, NFT) 2022</li>
+      <li>• ArtificialVideo YouTube Channel (JavaScript, AI Tools, Content Creation, Automation) 2022 - Present</li>
+      <li>• Moonolith - Blockchain Pixel Art (Vue.js, EtherJS, Smart Contracts, Digital Art) 2022</li>
+      <li>• GamePipe - Gaming Platform (Laravel, PHP, TailwindCSS, Gaming) 2021</li>
+    </ul>
+    <ul v-else class="text-gray-700">
+      <li>• Barrier Squad - 모바일 타워 디펜스 (Unity, C#, Android, AI Art) 2024</li>
+      <li>• Kresus Vue.js 툴킷 (Vue.js, TailwindCSS, Open Source) 2023</li>
+      <li>• Datanest - 탈중앙화 데이터 마켓플레이스 (Vue.js, Web3, Blockchain, NFT) 2022</li>
+      <li>• ArtificialVideo 유튜브 채널 (JavaScript, AI Tools, Content Creation, Automation) 2022 - 현재</li>
+      <li>• Moonolith - 블록체인 픽셀 아트 (Vue.js, EtherJS, Smart Contracts, Digital Art) 2022</li>
+      <li>• GamePipe - 게이밍 플랫폼 (Laravel, PHP, TailwindCSS, Gaming) 2021</li>
+    </ul>
+  </section>
 </template>
 
 <script setup>
 const { language } = useLanguage()
 
-const goToPortfolio = () => {
-  // Navigate to the main portfolio page where users can see all projects
-  navigateTo('/#projects')
+const openBarrierSquad = () => {
+  window.open('https://play.google.com/store/apps/details?id=com.gamevrest.BarriersQuad', '_blank')
+}
+
+const openKresus = () => {
+  window.open('https://www.kresus.eu/', '_blank')
+}
+
+const openDatanest = () => {
+  window.open('https://github.com/baris-f/PBWS-DataNFT', '_blank')
+}
+
+const openArtificialVideo = () => {
+  window.open('https://www.youtube.com/@ARTificialVideo/videos', '_blank')
+}
+
+const openMoonolith = () => {
+  window.open('https://www.moonolith.io/', '_blank')
+}
+
+const openGamePipe = () => {
+  window.open('https://gamepipe.io/', '_blank')
 }
 </script>

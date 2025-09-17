@@ -15,7 +15,7 @@
       <div class="flex-grow text-center md:text-left print:text-left">
         <h1 class="text-4xl font-bold text-prussianBlue mb-2">Florent Baris</h1>
         <h2 class="text-2xl text-celadonBlue mb-4">
-          {{ language === 'en' ? 'Fullstack Developer' : '풀스택 개발자' }}
+          {{ language === 'en' ? 'Developer and Project Manager' : '개발자 및 프로젝트 매니저' }}
         </h2>
         
         <!-- Contact Information -->
@@ -63,16 +63,12 @@
         {{ language === 'en' ? 'Professional Summary' : '전문 요약' }}
       </h3>
       <p v-if="language === 'en'" class="text-gray-700 leading-relaxed">
-        Passionate fullstack developer with a multidisciplinary profile and strong technical background. 
-        Experienced in Digital Transformation and Agile methodologies. Ambitious, resourceful, adaptable, 
-        resilient, and creative professional focused on solving real-world problems through innovative 
-        technology solutions.
+        Experience as a PM and frontend developer + game developer. My multidisciplinary profile and strong technical background, as well as
+        in Digital Transformation and Agile methodologies makes me able to work horizontally and adapts to both my team and client needs.
       </p>
       <p v-else class="text-gray-700 leading-relaxed">
-        다학제적인 프로필과 강력한 기술적 배경을 가진 열정적인 풀스택 개발자입니다. 
-        디지털 변환 및 애자일 방법론에 경험이 있습니다. 혁신적인 기술 솔루션을 통해 
-        현실 세계의 문제를 해결하는 데 집중하는 야심차고, 지략적이며, 적응력 있고, 
-        회복력 있고, 창의적인 전문가입니다.
+        PM 및 프론트엔드 개발자 + 게임 개발자로서의 경험. 다학제적인 프로필과 강력한 기술적 배경, 
+        그리고 디지털 변환 및 애자일 방법론에 대한 경험으로 수평적으로 작업하며 팀과 클라이언트 요구에 모두 적응할 수 있습니다.
       </p>
     </div>
   </header>

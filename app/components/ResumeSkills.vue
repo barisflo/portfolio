@@ -1,5 +1,5 @@
 <template>
-  <section class="mb-8">
+  <section class="mb-8 skills-section">
     <h2 class="text-2xl font-bold text-prussianBlue border-b border-celadonBlue pb-2 mb-6">
       {{ language === 'en' ? 'Technical Skills' : '기술 스킬' }}
     </h2>
@@ -23,16 +23,6 @@
           
           <div class="skill-item">
             <div class="flex justify-between items-center mb-1">
-              <span class="font-medium">JavaScript / TypeScript</span>
-              <span class="text-sm text-gray-600">{{ language === 'en' ? 'Expert' : '전문가' }}</span>
-            </div>
-            <div class="w-full bg-gray-200 rounded-full h-2">
-              <div class="bg-celadonBlue h-2 rounded-full" style="width: 90%"></div>
-            </div>
-          </div>
-          
-          <div class="skill-item">
-            <div class="flex justify-between items-center mb-1">
               <span class="font-medium">TailwindCSS</span>
               <span class="text-sm text-gray-600">{{ language === 'en' ? 'Advanced' : '고급' }}</span>
             </div>
@@ -41,7 +31,7 @@
             </div>
           </div>
           
-          <div class="skill-item">
+          <div class="skill-item">  
             <div class="flex justify-between items-center mb-1">
               <span class="font-medium">UI / UX Design</span>
               <span class="text-sm text-gray-600">{{ language === 'en' ? 'Intermediate' : '중급' }}</span>
@@ -191,7 +181,7 @@
           <h4 class="font-semibold text-prussianBlue">
             {{ language === 'en' ? 'Korean' : '한국어' }}
           </h4>
-          <p class="text-gray-600">{{ language === 'en' ? 'Advanced (Sogang Level 6)' : '고급 (서강대 6급)' }}</p>
+          <p class="text-gray-600">{{ language === 'en' ? 'Advanced' : '고급 (서강대 6급)' }}</p>
         </div>
       </div>
     </div>
