@@ -159,7 +159,8 @@
       </div>
     </div>
 
-    <!-- Languages -->
+    <!-- Languages - Commented out, moved to header -->
+    <!--
     <div class="mt-8">
       <h3 class="text-lg font-semibold text-prussianBlue mb-4">
         {{ language === 'en' ? 'Languages' : '언어' }}
@@ -185,6 +186,7 @@
         </div>
       </div>
     </div>
+    -->
   </section>
 </template>
 

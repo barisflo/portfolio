@@ -57,11 +57,56 @@
       </div>
     </div>
 
-    <!-- Professional Summary -->
+    <!-- Essential Information -->
     <div class="mt-6">
-      <h3 class="text-lg font-semibold text-prussianBlue mb-3">
-        {{ language === 'en' ? 'Professional Summary' : '전문 요약' }}
-      </h3>
+      <div class="bg-gray-50 p-4 rounded-lg border-l-4 border-celadonBlue">
+        <div class="space-y-2">
+          <!-- First line: Technical experience -->
+          <div class="flex flex-wrap gap-4 text-sm text-gray-700">
+            <template v-if="language === 'en'">
+              <span class="font-medium text-prussianBlue">2 years Project Manager (3+ projects)</span>
+              <span class="text-gray-400">•</span>
+              <span class="font-medium text-prussianBlue">4+ years Dev JS</span>
+              <span class="text-gray-400">•</span>
+              <span class="font-medium text-prussianBlue">4+ years C# Unity</span>
+              <span class="text-gray-400">•</span>
+              <span class="font-medium text-prussianBlue">15 Game projects</span>
+            </template>
+            <template v-else>
+              <span class="font-medium text-prussianBlue">2년 프로젝트 매니저 (3+ 프로젝트)</span>
+              <span class="text-gray-400">•</span>
+              <span class="font-medium text-prussianBlue">4+년 Dev JS</span>
+              <span class="text-gray-400">•</span>
+              <span class="font-medium text-prussianBlue">4+년 C# Unity</span>
+              <span class="text-gray-400">•</span>
+              <span class="font-medium text-prussianBlue">15개 게임 프로젝트</span>
+            </template>
+          </div>
+          <!-- Second line: Languages -->
+          <div class="flex flex-wrap gap-4 text-sm text-gray-700">
+            <template v-if="language === 'en'">
+              <span class="font-medium text-prussianBlue">French (native)</span>
+              <span class="text-gray-400">•</span>
+              <span class="font-medium text-prussianBlue">English (fluent)</span>
+              <span class="text-gray-400">•</span>
+              <span class="font-medium text-prussianBlue">Korean (Sogang Level 6)</span>
+            </template>
+            <template v-else>
+              <span class="font-medium text-prussianBlue">프랑스어 (모국어)</span>
+              <span class="text-gray-400">•</span>
+              <span class="font-medium text-prussianBlue">영어 (유창함)</span>
+              <span class="text-gray-400">•</span>
+              <span class="font-medium text-prussianBlue">한국어 (서강대 6급)</span>
+            </template>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Professional Summary Content -->
+      <div class="mt-4">
+        <h3 class="text-lg font-semibold text-prussianBlue mb-3">
+          {{ language === 'en' ? 'Professional Summary' : '전문 요약' }}
+        </h3>
       <p v-if="language === 'en'" class="text-gray-700 leading-relaxed">
         Experience as a PM and frontend developer + game developer. My multidisciplinary profile and strong technical background, as well as
         in Digital Transformation and Agile methodologies makes me able to work horizontally and adapts to both my team and client needs.
@@ -70,6 +115,7 @@
         PM 및 프론트엔드 개발자 + 게임 개발자로서의 경험. 다학제적인 프로필과 강력한 기술적 배경, 
         그리고 디지털 변환 및 애자일 방법론에 대한 경험으로 수평적으로 작업하며 팀과 클라이언트 요구에 모두 적응할 수 있습니다.
       </p>
+      </div>
     </div>
   </header>
 </template>

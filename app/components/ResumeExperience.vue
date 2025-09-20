@@ -9,12 +9,12 @@
       <div class="border-l-4 border-celadonBlue pl-6">
         <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2 experience-header">
           <div class="experience-title-company">
-            <h3 class="text-xl font-semibold text-prussianBlue">
-              {{ language === 'en' ? 'Fullstack Developer' : '풀스택 개발자' }}
+            <h3 class="text-xl font-semibold text-prussianBlue inline">
+              {{ language === 'en' ? 'PM - Frontend Developer' : '프로젝트 매니저 - 프론트엔드 개발자' }}
             </h3>
             <span class="text-celadonBlue font-medium">
               - <a href="https://fromthered.com" target="_blank" rel="noopener noreferrer" class="hover:underline">
-                FromTheRed
+                FromTheRed {{ language === 'en' ? '(Korean Company)' : '(한국 회사)' }}
               </a>
             </span>
           </div>
@@ -23,14 +23,12 @@
           </span>
         </div>
         <ul v-if="language === 'en'" class="text-gray-700 space-y-2">
-          <li>• Worked on <a href="https://zempie.com" target="_blank" rel="noopener noreferrer" class="text-celadonBlue hover:underline">Zempie Website</a>, as a developer and PM Nuxt.js / TailwindCSS</li>
-          <li>• Events and indie game developer related</li>
-          <li>• Overcame language issue and had to adaptto Korean working environment</li>
+          <li>• <a href="https://zempie.com" target="_blank" rel="noopener noreferrer" class="text-celadonBlue hover:underline">Zempie Website</a>, as a developer and PM Nuxt.js / TailwindCSS</li>
+          <li>• Indie game developer related events organization and management</li>
         </ul>
         <ul v-else class="text-gray-700 space-y-2">
           <li>• <a href="https://zempie.com" target="_blank" rel="noopener noreferrer" class="text-celadonBlue hover:underline">Zempie Website</a>를 개발 및 PM, Nuxt.js / TailwindCSS</li>
-          <li>• 이벤트 및 인디 게임 개발자 관련</li>
-          <li>• 언어 문제를 극복하고 한국 근무 환경에 적응</li>
+          <li>• 이벤트 및 인디 게임 개발자 관련 이벤트 조직 및 관리</li>
         </ul>
       </div>
 
@@ -38,7 +36,7 @@
       <div class="border-l-4 border-celadonBlue pl-6">
         <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2 experience-header">
           <div class="experience-title-company">
-            <h3 class="text-xl font-semibold text-prussianBlue">
+            <h3 class="text-xl font-semibold text-prussianBlue inline">
               {{ language === 'en' ? 'Freelance Fullstack Developer' : '프리랜스 풀스택 개발자' }}
             </h3>
             <span class="text-celadonBlue font-medium">
@@ -63,7 +61,7 @@
       <div class="border-l-4 border-celadonBlue pl-6">
         <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2 experience-header">
           <div class="experience-title-company">
-            <h3 class="text-xl font-semibold text-prussianBlue">
+            <h3 class="text-xl font-semibold text-prussianBlue inline">
               {{ language === 'en' ? 'Pedagogic Teacher' : '교육 교사' }}
             </h3>
             <span class="text-celadonBlue font-medium">
@@ -75,14 +73,11 @@
           </span>
         </div>
         <ul v-if="language === 'en'" class="text-gray-700 space-y-2">
-          <li>• Active participation to the creation of the school</li>
-          <li>• Management of a small team, use of Agile Methods</li>
+          <li>• Active in the creation of the school, Management of a small team, Agile Methods</li>
           <li>• Teaching in programming and Digital Transformation, Workshops (JS / C#)</li>
         </ul>
         <ul v-else class="text-gray-700 space-y-2">
-          <li>• 학교 설립에 적극적으로 참여</li>
-          <li>• 프로그래밍 및 디지털 변환 교육</li>
-          <li>• 소규모 팀 관리, 애자일 방법론 사용</li>
+          <li>• 학교 설립에 적극적으로 참여, 소규모 팀 관리, 애자일 방법론 사용</li>
           <li>• 워크샵 및 콘텐츠 제작 (JS / C#)</li>
         </ul>
       </div>
@@ -91,7 +86,7 @@
       <div class="border-l-4 border-celadonBlue pl-6">
         <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2 experience-header">
           <div class="experience-title-company">
-            <h3 class="text-xl font-semibold text-prussianBlue">
+            <h3 class="text-xl font-semibold text-prussianBlue inline">
               {{ language === 'en' ? 'Developer and Agile Trainee' : '개발자 및 애자일 연수생' }}
             </h3>
             <span class="text-celadonBlue font-medium">
@@ -116,7 +111,7 @@
       <div class="border-l-4 border-celadonBlue pl-6">
         <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2 experience-header">
           <div class="experience-title-company">
-            <h3 class="text-xl font-semibold text-prussianBlue">
+            <h3 class="text-xl font-semibold text-prussianBlue inline">
               {{ language === 'en' ? 'Mobile Fullstack Developer' : '모바일 풀스택 개발자' }}
             </h3>
             <span class="text-celadonBlue font-medium">
