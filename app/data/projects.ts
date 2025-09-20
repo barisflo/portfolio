@@ -5,6 +5,7 @@ export interface Project {
   link: string
   image: string
   tags: string[]
+  category: string
   description: {
     en: string
     kr: string
@@ -23,6 +24,7 @@ export const projects: Project[] = [
     link: 'https://play.google.com/store/apps/details?id=com.gamevrest.BarriersQuad',
     image: '/images/BarrierSquad.png',
     tags: ['Unity', 'Android'],
+    category: 'Games',
     description: {
       en: 'Mobile Game, tower defense like, usage of AI generated images',
       kr: '모바일 게임, 타워 방어 같은 것'
@@ -35,17 +37,35 @@ export const projects: Project[] = [
   {
     id: 'premier-servi',
     title: 'Premier Servi',
-    year: '2023',
-    link: 'https://gamevrest.com/',
+    year: '2025',
+    link: 'https://store.steampowered.com/app/2884670/Premier_Servi/',
     image: '/images/PremierServi.png',
-    tags: ['Unity', 'Content creation', 'AI'],
+    tags: ['Unity', 'Steam', 'Party Game'],
+    category: 'Games',
     description: {
-      en: 'Premier Servi, use of AI generated assets, ongoing',
-      kr: 'Premier Servi, AI 생성 자산의 사용, 지속적인'
+      en: 'Race with Hide and Seek - Colorful Party Game featuring delicious French Pastry',
+      kr: '숨바꼭질과 경주 - 맛있는 프랑스 페이스트리를 특징으로 하는 화려한 파티 게임'
     },
     longDescription: {
-      en: 'Premier servi is (First Arrived, First Served) is a colorful Party Game featuring delicious French Pastry ! Made with Unity C#, I am responsible for the game design, marketing, project management and part of the programming / assets',
-      kr: 'Premier servi는 (First Arrived, First Served) 프랑스 페이스트리를 특징으로 하는 화려한 파티 게임입니다! Unity C#로 제작되었으며, 게임 디자인, 마케팅, 프로젝트 관리 및 일부 프로그래밍 / 자산을 담당했습니다'
+      en: 'Premier Servi (First Arrived, First Served) is a colorful Party Mind Game featuring delicious French Pastry! A 2-4 player local party game where you race to eat cakes before your friends without getting spotted. Made with Unity C#, I am responsible for the game design, marketing, project management and part of the programming/assets. Now available on Steam!',
+      kr: 'Premier Servi (First Arrived, First Served)는 맛있는 프랑스 페이스트리를 특징으로 하는 화려한 파티 마인드 게임입니다! 친구들보다 먼저 케이크를 먹기 위해 경주하되 들키지 않도록 조심해야 하는 2-4인 로컬 파티 게임입니다. Unity C#로 제작되었으며, 게임 디자인, 마케팅, 프로젝트 관리 및 일부 프로그래밍/자산을 담당했습니다. 이제 Steam에서 이용 가능합니다!'
+    }
+  },
+  {
+    id: 'gamevrest',
+    title: 'Gamevrest',
+    year: '2023',
+    link: 'https://gamevrest.com/',
+    image: '/images/GamevrestFull.png',
+    tags: ['Website', 'Game Studio', 'Portfolio'],
+    category: 'Web Development',
+    description: {
+      en: 'Gamevrest official website and game studio portfolio',
+      kr: 'Gamevrest 공식 웹사이트 및 게임 스튜디오 포트폴리오'
+    },
+    longDescription: {
+      en: 'Official website for Gamevrest, a small indie game studio. The website showcases our games, team, and provides information about our development process and upcoming projects.',
+      kr: '소규모 인디 게임 스튜디오인 Gamevrest의 공식 웹사이트입니다. 웹사이트는 우리의 게임, 팀을 소개하고 개발 과정과 향후 프로젝트에 대한 정보를 제공합니다.'
     }
   },
   {
@@ -55,6 +75,7 @@ export const projects: Project[] = [
     link: 'https://www.kresus.eu/',
     image: '/images/Kresus.png',
     tags: ['Vue 3', 'TailwindCSS'],
+    category: 'Web Development',
     description: {
       en: 'Worked on Kresus Vue.js toolkit as a freelancer',
       kr: '프리랜서로 Kresus Vue.js 툴킷 작업'
@@ -65,12 +86,30 @@ export const projects: Project[] = [
     }
   },
   {
+    id: 'game-ai-tools',
+    title: 'Game AI Tools',
+    year: '2024-Now',
+    link: 'https://www.artstation.com/barisflo',
+    image: '/images/Char.jpg',
+    tags: ['AI', 'ComfyUI', 'Midjourney', 'Technical Art'],
+    category: 'Content Creation',
+    description: {
+      en: 'Game assets created with AI tools, sold and used in personal projects',
+      kr: 'AI 도구로 제작된 게임 자산, 판매 및 개인 프로젝트에서 사용'
+    },
+    longDescription: {
+      en: 'Developed expertise in AI-generated game assets using ComfyUI and Midjourney. Created scalable pipelines for asset generation and sold custom game assets. Applied technical artist knowledge to produce high-quality assets at scale for various game projects.',
+      kr: 'ComfyUI와 Midjourney를 사용한 AI 생성 게임 자산 전문성 개발. 자산 생성을 위한 확장 가능한 파이프라인 구축 및 맞춤형 게임 자산 판매. 다양한 게임 프로젝트를 위한 대규모 고품질 자산 생산을 위한 기술 아티스트 지식 적용'
+    }
+  },
+  {
     id: 'artificial-video',
     title: 'ArtificialVideo',
-    year: '2022',
+    year: '2022-Now',
     link: 'https://www.youtube.com/@ARTificialVideo/videos',
     image: '/images/Artificial.png',
     tags: ['AI', 'Javascript'],
+    category: 'Content Creation',
     description: {
       en: 'Youtube channel (15k) with AI made videos, ongoing',
       kr: 'AI가 만든 동영상이 있는 유튜브 채널(15k), 진행 중'
@@ -87,6 +126,7 @@ export const projects: Project[] = [
     link: 'https://github.com/baris-f/PBWS-DataNFT',
     image: '/images/datanest.png',
     tags: ['Vue 3', 'TailwindCSS', 'Web 3'],
+    category: 'Web Development',
     description: {
       en: 'Decentalized Data marketplace using NFT access tokens',
       kr: 'NFT 액세스 토큰을 사용한 디센트럴화된 데이터 마켓플레이스'
@@ -103,6 +143,7 @@ export const projects: Project[] = [
     link: 'https://www.moonolith.io/',
     image: '/images/Monolith.png',
     tags: ['Vue 3', 'EtherJS', 'Web 3'],
+    category: 'Web Development',
     description: {
       en: 'Pixel grid wall, stored in a blockchain and sold with ETH',
       kr: '블록체인에 저장되고 ETH와 함께 판매되는 픽셀 그리드 벽'
@@ -119,6 +160,7 @@ export const projects: Project[] = [
     link: 'https://gamepipe.io/',
     image: '/images/GamePipe.png',
     tags: ['Laravel', 'TailwindCSS'],
+    category: 'Web Development',
     description: {
       en: 'Website to play and host video games',
       kr: '비디오 게임을 플레이하고 호스팅하는 웹 사이트'
@@ -135,6 +177,7 @@ export const projects: Project[] = [
     link: 'https://www.youtube.com/watch?v=HJnT_nsFjWY',
     image: '/images/proxima.png',
     tags: ['Unity', 'C#'],
+    category: 'Games',
     description: {
       en: 'Augmented reality city, on mobile application',
       kr: '모바일 애플리케이션상의 증강현실 도시'
@@ -151,6 +194,7 @@ export const projects: Project[] = [
     link: 'https://gamepipe.io/@barisf/pcr-defender',
     image: '/images/PCRDefender.png',
     tags: ['Unity', 'C#'],
+    category: 'Games',
     description: {
       en: 'Promotional video game for C2i santé',
       kr: 'C2isanté 홍보용 비디오 게임'
@@ -167,6 +211,7 @@ export const projects: Project[] = [
     link: 'https://globalgamejam.org/users/barisf',
     image: '/images/gamejam.png',
     tags: ['Unity', 'C#', 'GD', '...'],
+    category: 'Games',
     description: {
       en: 'Game Jams for over 10 years, multiple roles',
       kr: '10년이 넘는 게임잼, 여러 역할'

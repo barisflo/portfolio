@@ -16,23 +16,24 @@
         <div class="md:w-1/2 w-full flex flex-col">
           <div class="flex-grow">
             <h1 class="text-4xl font-bold text-prussianBlue mb-2">Florent Baris</h1>
-            <h2 class="text-2xl text-celadonBlue mb-4">{{ language === 'en' ? 'Fullstack Developer' : '풀스택 개발자' }}</h2>
+            <h2 class="text-2xl text-celadonBlue mb-4">
+              {{ language === 'en' ? 'Developer and Project Manager' : '개발자 및 프로젝트 매니저' }}
+            </h2>
             
-            <p v-if="language === 'en'" class="text-gray-700 leading-relaxed mb-6">
-              Passionate by project creation as a whole, I have a pluri-disciplinary profile. 
-              With a strong technical background, I today am experienced in Digital Transformation and Agile.<br/><br/>
-              I am ambitious, resourceful, adaptable, resilient and creative. 
-              I want to make a difference and solve real world problems.
-            </p>
-
-            <p v-if="language === 'kr'" class="text-gray-700 leading-relaxed mb-6 text-sm md:text-base">
-              제가 지닌 다학제적인 프로필을 바탕으로, 전반적인 프로젝트 생성 과정에 강한 열정을 지니고 있습니다. 
-              개인 프로젝트 및 다년간의 교육을 통해 얻은 강력한 기술적 배경을 토대로 경험이 풍부한 개발자가 될 수 있었습니다.<br/><br/>
-              저는 상황에 따라 적절하게 대처하는 방법을 알고 있으며, 새로운 환경에 대한 적응력이 뛰어납니다. 
-              창의적인 문제 해결 방안을 어렵지 않게 도색해내며, 꿈을 좇아 달려가는 열정 또한 지니고 있습니다.<br/><br/>
-              나는 야망이 있고, 지략이 있고, 적응력이 있고, 회복력이 있고, 창의적이다. 
-              저는 궁극적으로 현실의 문제를 해결할 수 있는, 차별화된 개발자가 되고 싶습니다.
-            </p>
+            <!-- Professional Summary -->
+            <div class="mb-6">
+              <h3 class="text-lg font-semibold text-prussianBlue mb-3">
+                {{ language === 'en' ? 'Professional Summary' : '전문 요약' }}
+              </h3>
+              <p v-if="language === 'en'" class="text-gray-700 leading-relaxed">
+                Experience as a PM and frontend developer + game developer. My multidisciplinary profile and strong technical background, as well as
+                in Digital Transformation and Agile methodologies makes me able to work horizontally and adapts to both my team and client needs.
+              </p>
+              <p v-else class="text-gray-700 leading-relaxed">
+                PM 및 프론트엔드 개발자 + 게임 개발자로서의 경험. 다학제적인 프로필과 강력한 기술적 배경, 
+                그리고 디지털 변환 및 애자일 방법론에 대한 경험으로 수평적으로 작업하며 팀과 클라이언트 요구에 모두 적응할 수 있습니다.
+              </p>
+            </div>
           </div>
 
           <!-- Action Buttons -->
@@ -65,6 +66,43 @@
                 <span class="hidden xl:inline">{{ language === 'en' ? 'Mail' : '메일' }}</span>
               </button>
             </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Essential Information - Below buttons -->
+      <div class="mt-8 flex justify-center">
+        <div class="bg-gray-50 p-6 rounded-xl max-w-4xl w-full">
+          <div class="space-y-4 text-center">
+            <!-- Technical experience tags -->
+            <div class="flex flex-wrap justify-center gap-2">
+              <template v-if="language === 'en'">
+                <span class="bg-azure text-celadonBlue px-3 py-1 font-semibold text-sm rounded-full">2 years Project Manager (3+ projects)</span>
+                <span class="bg-azure text-celadonBlue px-3 py-1 font-semibold text-sm rounded-full">4+ years Dev JS</span>
+                <span class="bg-azure text-celadonBlue px-3 py-1 font-semibold text-sm rounded-full">4+ years C# Unity</span>
+                <span class="bg-azure text-celadonBlue px-3 py-1 font-semibold text-sm rounded-full">15 Game projects</span>
+              </template>
+              <template v-else>
+                <span class="bg-azure text-celadonBlue px-3 py-1 font-semibold text-sm rounded-full">2년 프로젝트 매니저 (3+ 프로젝트)</span>
+                <span class="bg-azure text-celadonBlue px-3 py-1 font-semibold text-sm rounded-full">4+년 Dev JS</span>
+                <span class="bg-azure text-celadonBlue px-3 py-1 font-semibold text-sm rounded-full">4+년 C# Unity</span>
+                <span class="bg-azure text-celadonBlue px-3 py-1 font-semibold text-sm rounded-full">15개 게임 프로젝트</span>
+              </template>
+            </div>
+            
+            <!-- Languages tags -->
+            <div class="flex flex-wrap justify-center gap-2">
+              <template v-if="language === 'en'">
+                <span class="bg-gray-100 text-gray-700 px-3 py-1 font-medium text-sm rounded-full border border-gray-200">French (native)</span>
+                <span class="bg-gray-100 text-gray-700 px-3 py-1 font-medium text-sm rounded-full border border-gray-200">English (fluent)</span>
+                <span class="bg-gray-100 text-gray-700 px-3 py-1 font-medium text-sm rounded-full border border-gray-200">Korean (Sogang Level 6)</span>
+              </template>
+              <template v-else>
+                <span class="bg-gray-100 text-gray-700 px-3 py-1 font-medium text-sm rounded-full border border-gray-200">프랑스어 (모국어)</span>
+                <span class="bg-gray-100 text-gray-700 px-3 py-1 font-medium text-sm rounded-full border border-gray-200">영어 (유창함)</span>
+                <span class="bg-gray-100 text-gray-700 px-3 py-1 font-medium text-sm rounded-full border border-gray-200">한국어 (서강대 6급)</span>
+              </template>
+            </div>
           </div>
         </div>
       </div>
