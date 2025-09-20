@@ -15,18 +15,15 @@
             {{ language === 'en' ? '2015 - 2020' : '2015 - 2020' }}
           </span>
         </div>
-        <p class="text-celadonBlue font-medium mb-3">
-          {{ language === 'en' ? 'EPITECH, France' : 'EPITECH, 프랑스' }}
-        </p>
         <ul v-if="language === 'en'" class="text-gray-700 space-y-2">
           <li>• PCE program in 5 years, intensive and complete programming</li>
           <li>• Languages C/C++/Web, project management</li>
-          <li>• Business and start-up creation</li>
+          <li>• Business and start-up creation course</li>
         </ul>
         <ul v-else class="text-gray-700 space-y-2">
           <li>• 5년 PCE 프로그램, 집중적이고 완전한 프로그래밍</li>
           <li>• C/C++/Web 언어, 프로젝트 관리</li>
-          <li>• 비즈니스 및 스타트업 창업</li>
+          <li>• 비즈니스 및 스타트업 창업 과정</li>
         </ul>
       </div>
 
@@ -40,9 +37,6 @@
             {{ language === 'en' ? 'September 2018 - July 2019' : '2018년 9월 - 2019년 7월' }}
           </span>
         </div>
-        <p class="text-celadonBlue font-medium mb-3">
-          {{ language === 'en' ? 'Exchange Program' : '교환 프로그램' }}
-        </p>
         <ul v-if="language === 'en'" class="text-gray-700 space-y-2">
           <li>• Courses on game engine Unity, Game design,project management</li>
           <li>• Conception of multiple mobile projects and games (C#, Java)</li>
@@ -63,9 +57,6 @@
             {{ language === 'en' ? '2017 - 2018' : '2017 - 2018' }}
           </span>
         </div>
-        <p class="text-celadonBlue font-medium mb-3">
-          {{ language === 'en' ? 'Pedagogy Formation' : '교육학 과정' }}
-        </p>
         <ul v-if="language === 'en'" class="text-gray-700 space-y-2">
           <li>• 2 year formation in pedagogy</li>
           <li>• Management theory study and practical application as Epitech Assistant</li>

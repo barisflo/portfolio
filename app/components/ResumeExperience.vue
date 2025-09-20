@@ -44,7 +44,7 @@
             </span>
           </div>
           <span class="text-gray-600 font-medium experience-date">
-            {{ language === 'en' ? '2022 - 2024' : '2022 - 2024' }}
+            {{ language === 'en' ? '2022 - 2023' : '2022 - 2023' }}
           </span>
         </div>
         <ul v-if="language === 'en'" class="text-gray-700 space-y-2">
@@ -65,7 +65,9 @@
               {{ language === 'en' ? 'Pedagogic Teacher' : '교육 교사' }}
             </h3>
             <span class="text-celadonBlue font-medium">
-              - {{ language === 'en' ? 'EPITECH DIGITAL (CDI)' : 'EPITECH DIGITAL (정규직)' }}
+              - <a href="https://www.epitech.digital/" target="_blank" rel="noopener noreferrer" class="hover:underline">
+                {{ language === 'en' ? 'EPITECH DIGITAL (CDI)' : 'EPITECH DIGITAL (정규직)' }}
+              </a>
             </span>
           </div>
           <span class="text-gray-600 font-medium experience-date">
@@ -90,7 +92,9 @@
               {{ language === 'en' ? 'Developer and Agile Trainee' : '개발자 및 애자일 연수생' }}
             </h3>
             <span class="text-celadonBlue font-medium">
-              - {{ language === 'en' ? 'Agile Partner (Internship)' : 'Agile Partner (인턴십)' }}
+              - <a href="https://www.agilepartner.net/en/" target="_blank" rel="noopener noreferrer" class="hover:underline">
+                {{ language === 'en' ? 'Agile Partner (Internship)' : 'Agile Partner (인턴십)' }}
+              </a>
             </span>
           </div>
           <span class="text-gray-600 font-medium experience-date">
@@ -115,7 +119,9 @@
               {{ language === 'en' ? 'Mobile Fullstack Developer' : '모바일 풀스택 개발자' }}
             </h3>
             <span class="text-celadonBlue font-medium">
-              - {{ language === 'en' ? 'C2I Santé (Internship)' : 'C2I Santé (인턴십)' }}
+              - <a href="https://ascnd.fr/" target="_blank" rel="noopener noreferrer" class="hover:underline">
+                {{ language === 'en' ? 'C2I Santé (Internship)' : 'C2I Santé (인턴십)' }}
+              </a>
             </span>
           </div>
           <span class="text-gray-600 font-medium experience-date">

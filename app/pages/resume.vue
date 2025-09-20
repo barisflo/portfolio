@@ -61,6 +61,10 @@ useSeoMeta({
 })
 
 const printResume = () => {
+  // Set default filename for PDF export
+  const originalTitle = document.title
+  document.title = 'Florent_Baris_Resume'
+  
   // For printing, we'll use the browser's print dialog with our optimized print styles
   // This gives users control over print settings while removing artifacts
   const beforePrint = () => {
@@ -73,6 +77,9 @@ const printResume = () => {
     // Restore UI elements
     const noprint = document.querySelectorAll('.no-print')
     noprint.forEach(el => (el as HTMLElement).style.display = '')
+    
+    // Restore original title
+    document.title = originalTitle
   }
   
   window.addEventListener('beforeprint', beforePrint)
@@ -187,20 +194,46 @@ const generatePDF = () => {
   
   /* Compact spacing for print */
   .mb-8 {
-    margin-bottom: 1.5rem !important;
-  }
-  
-  .mb-6 {
     margin-bottom: 1rem !important;
   }
   
-  .space-y-6 > * + * {
-    margin-top: 1.25rem !important;
+  .mb-6 {
+    margin-bottom: 0.75rem !important;
   }
   
-  /* Optimize page breaks */
+  .space-y-6 > * + * {
+    margin-top: 1rem !important;
+  }
+  
+  /* Reduce margins for experience items and optimize page breaks */
   .border-l-4 {
-    page-break-inside: avoid;
+    margin-bottom: 0.75rem !important;
+    page-break-inside: auto;
+    break-inside: auto;
+  }
+  
+  /* Increase gap between Education and Skills sections in print */
+  .education-section {
+    margin-bottom: 2rem !important;
+  }
+  
+  /* Add top margin to Skills section in print */
+  .skills-section {
+    margin-top: 1.5rem !important;
+  }
+  
+  /* Add top margin to Projects section in print */
+  .projects-section {
+    margin-top: 1rem !important;
+  }
+  
+  /* Reduce spacing within experience items */
+  .border-l-4 ul {
+    margin-top: 0.5rem !important;
+  }
+  
+  .border-l-4 li {
+    margin-bottom: 0.25rem !important;
   }
   
   /* Ensure proper margins for printing */
