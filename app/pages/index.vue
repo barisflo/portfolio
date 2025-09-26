@@ -10,11 +10,11 @@
 // SEO and meta tags
 useSeoMeta({
   title: 'Florent Baris - PM / Developer Portfolio',
-  description: 'Passionate PM and developer with expertise in Vue.js, Nuxt, Unity, and modern web technologies. Discover my projects and get in touch.',
-  keywords: 'Florent Baris, PM, Developer, Project Manager, Vue.js, Nuxt, Unity, Web Development, Portfolio',
+  description: 'Experienced PM and developer specializing in game development, Unity, Vue.js, and modern web technologies. Available for game freelance projects, serious games, mobile games, game design, technical art, and game project management. 10+ years game jam experience, published Steam games, mobile games on Google Play.',
+  keywords: 'Florent Baris, PM, Developer, Project Manager, Game Developer, Unity Developer, Game Freelance, Serious Games, Mobile Games, Game Design, Technical Art, Game Project Management, Game Consultant, Indie Game Developer, Game Jam Expert, Steam Games, Google Play Games, Vue.js, Nuxt, Web Development, Portfolio, Game Development Services, Game Programming, Game Art, Game Production, Game Marketing, Game Publishing, Game Studio, Gamevrest',
   author: 'Florent Baris',
   ogTitle: 'Florent Baris - PM / Developer Portfolio',
-  ogDescription: 'Passionate PM and developer with expertise in Vue.js, Nuxt, Unity, and modern web technologies.',
+  ogDescription: 'Experienced PM and developer specializing in game development, Unity, Vue.js, and modern web technologies. Available for game freelance projects, serious games, mobile games, game design, technical art, and game project management.',
   ogType: 'website',
   twitterCard: 'summary_large_image'
 })

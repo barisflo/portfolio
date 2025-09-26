@@ -51,11 +51,11 @@ onMounted(async () => {
 // SEO and meta tags
 useSeoMeta({
   title: 'Florent Baris - Resume',
-  description: 'Professional resume of Florent Baris, PM and Developer with expertise in Vue.js, Nuxt, Unity, and modern web technologies.',
-  keywords: 'Florent Baris, Resume, CV, PM, Developer, Project Manager, Vue.js, Nuxt, Unity',
+  description: 'Professional resume of Florent Baris, PM and Developer specializing in game development, Unity, Vue.js, and modern web technologies. Available for game freelance projects, serious games, mobile games, game design, technical art, and game project management.',
+  keywords: 'Florent Baris, Resume, CV, PM, Developer, Project Manager, Game Developer, Unity Developer, Game Freelance, Serious Games, Mobile Games, Game Design, Technical Art, Game Project Management, Game Consultant, Indie Game Developer, Game Jam Expert, Steam Games, Google Play Games, Vue.js, Nuxt, Unity, Game Development Services, Game Programming, Game Art, Game Production, Game Marketing, Game Publishing, Game Studio, Gamevrest',
   author: 'Florent Baris',
   ogTitle: 'Florent Baris - Resume',
-  ogDescription: 'Professional resume of Florent Baris, PM and Developer.',
+  ogDescription: 'Professional resume of Florent Baris, PM and Developer specializing in game development, Unity, Vue.js, and modern web technologies. Available for game freelance projects, serious games, mobile games, game design, technical art, and game project management.',
   ogType: 'website',
   twitterCard: 'summary_large_image'
 })
