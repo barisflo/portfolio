@@ -54,7 +54,7 @@ export const projects: Project[] = [
   {
     id: 'gamevrest',
     title: 'Gamevrest',
-    year: '2023',
+    year: '2025',
     link: 'https://gamevrest.com/',
     image: '/images/GamevrestFull.png',
     tags: ['Website', 'Game Studio', 'Portfolio'],

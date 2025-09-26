@@ -87,18 +87,18 @@
         <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
           <h3 class="text-xl font-semibold text-prussianBlue hover:text-celadonBlue transition-colors">
             <a href="https://www.youtube.com/@ARTificialVideo/videos" target="_blank" rel="noopener noreferrer" class="hover:underline">
-              {{ language === 'en' ? 'ArtificialVideo YouTube Channel' : 'ArtificialVideo 유튜브 채널' }}
+              {{ language === 'en' ? 'artificialVideo - Freelance / Youtube' : 'artificialVideo - 프리랜스 / 유튜브' }}
             </a>
           </h3>
           <span class="text-gray-600 font-medium">2022 - {{ language === 'en' ? 'Present' : '현재' }}</span>
         </div>
         <p v-if="language === 'en'" class="text-gray-700 mb-3">
-          YouTube channel with 15,000+ subscribers focused on AI-generated content. 
           Developed automated content generation workflows and developed a Fiverr activity to sell AI generated images.
+          YouTube channel with 15,000+ subscribers focused on AI-generated content.
         </p>
         <p v-else class="text-gray-700 mb-3">
-          AI 생성 콘텐츠에 중점을 둔 15,000명 이상의 구독자를 보유한 유튜브 채널. 
           자동화된 콘텐츠 생성 워크플로우를 개발하고 AI 생성 이미지를 판매하는 Fiverr 활동을 개발.
+          AI 생성 콘텐츠에 중점을 둔 15,000명 이상의 구독자를 보유한 유튜브 채널.
         </p>
         <div class="flex flex-wrap gap-2">
           <span class="bg-azure px-3 py-1 text-sm rounded-full text-celadonBlue font-medium">JavaScript</span>
@@ -171,7 +171,7 @@
       <li>• Barrier Squad - Mobile Tower Defense (Unity, C#, Android, AI Art) 2024</li>
       <li>• Kresus Vue.js Toolkit (Vue.js, TailwindCSS, Open Source) 2023</li>
       <li>• Datanest - Decentralized Data Marketplace (Vue.js, Web3, Blockchain, NFT) 2022</li>
-      <li>• ArtificialVideo YouTube Channel (JavaScript, AI Tools, Content Creation, Automation) 2022 - Present</li>
+      <li>• artificialVideo - Freelance / Youtube (JavaScript, AI Tools, Content Creation, Automation) 2022 - Present</li>
       <li>• Moonolith - Blockchain Pixel Art (Vue.js, EtherJS, Smart Contracts, Digital Art) 2022</li>
       <li>• GamePipe - Gaming Platform (Laravel, PHP, TailwindCSS, Gaming) 2021</li>
     </ul>
@@ -179,7 +179,7 @@
       <li>• Barrier Squad - 모바일 타워 디펜스 (Unity, C#, Android, AI Art) 2024</li>
       <li>• Kresus Vue.js 툴킷 (Vue.js, TailwindCSS, Open Source) 2023</li>
       <li>• Datanest - 탈중앙화 데이터 마켓플레이스 (Vue.js, Web3, Blockchain, NFT) 2022</li>
-      <li>• ArtificialVideo 유튜브 채널 (JavaScript, AI Tools, Content Creation, Automation) 2022 - 현재</li>
+      <li>• artificialVideo - 프리랜스 / 유튜브 (JavaScript, AI Tools, Content Creation, Automation) 2022 - 현재</li>
       <li>• Moonolith - 블록체인 픽셀 아트 (Vue.js, EtherJS, Smart Contracts, Digital Art) 2022</li>
       <li>• GamePipe - 게이밍 플랫폼 (Laravel, PHP, TailwindCSS, Gaming) 2021</li>
     </ul>
