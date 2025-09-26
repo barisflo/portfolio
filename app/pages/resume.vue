@@ -51,11 +51,11 @@ onMounted(async () => {
 // SEO and meta tags
 useSeoMeta({
   title: 'Florent Baris - Resume',
-  description: 'Professional resume of Florent Baris, Fullstack Developer with expertise in Vue.js, Nuxt, Unity, and modern web technologies.',
-  keywords: 'Florent Baris, Resume, CV, Fullstack Developer, Vue.js, Nuxt, Unity',
+  description: 'Professional resume of Florent Baris, PM and Developer with expertise in Vue.js, Nuxt, Unity, and modern web technologies.',
+  keywords: 'Florent Baris, Resume, CV, PM, Developer, Project Manager, Vue.js, Nuxt, Unity',
   author: 'Florent Baris',
   ogTitle: 'Florent Baris - Resume',
-  ogDescription: 'Professional resume of Florent Baris, Fullstack Developer.',
+  ogDescription: 'Professional resume of Florent Baris, PM and Developer.',
   ogType: 'website',
   twitterCard: 'summary_large_image'
 })

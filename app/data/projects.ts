@@ -208,7 +208,7 @@ export const projects: Project[] = [
     id: 'game-jams',
     title: 'Game Jams',
     year: '2015 to Now',
-    link: 'https://globalgamejam.org/users/barisf',
+    link: 'https://barisflo.itch.io',
     image: '/images/gamejam.png',
     tags: ['Unity', 'C#', 'GD', '...'],
     category: 'Games',
@@ -217,8 +217,8 @@ export const projects: Project[] = [
       kr: '10년이 넘는 게임잼, 여러 역할'
     },
     longDescription: {
-      en: 'Multiple game jams mostly Global game jam, for now over 10 years in a row. Almost every role covered over the years https://v3.globalgamejam.org/users/barisf',
-      kr: '주로 Global Game Jam에서 여러 게임 잼을 진행했습니다. 현재까지 10년 연속으로 참여하고 있으며, 거의 모든 역할을 수행했습니다 https://v3.globalgamejam.org/users/barisf'
+      en: 'Multiple game jams mostly Global game jam, for now over 10 years in a row. Almost every role covered over the years. // Previous link: https://v3.globalgamejam.org/users/barisf',
+      kr: '주로 Global Game Jam에서 여러 게임 잼을 진행했습니다. 현재까지 10년 연속으로 참여하고 있으며, 거의 모든 역할을 수행했습니다. // 이전 링크: https://v3.globalgamejam.org/users/barisf'
     }
   }
 ]
