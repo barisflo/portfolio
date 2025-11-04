@@ -6,6 +6,58 @@
 
     <div class="space-y-6">
       <!-- Project 1 -->
+      <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer" @click="openMessyKingdom">
+        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
+          <h3 class="text-xl font-semibold text-prussianBlue hover:text-celadonBlue transition-colors">
+            <a href="https://poki.com/en/g/messy-kingdom-35605720" target="_blank" rel="noopener noreferrer" class="hover:underline">
+              {{ language === 'en' ? 'Messy Kingdom - Puzzle Adventure' : 'Messy Kingdom - 퍼즐 어드벤처' }}
+            </a>
+          </h3>
+          <span class="text-gray-600 font-medium">2025</span>
+        </div>
+        <p v-if="language === 'en'" class="text-gray-700 mb-3">
+          Colorful puzzle adventure game featuring strategic gameplay and creative problem-solving. 
+          Published on Poki platform with optimized WebGL performance.
+        </p>
+        <p v-else class="text-gray-700 mb-3">
+          전략적 게임플레이와 창의적 문제 해결을 특징으로 하는 다채로운 퍼즐 어드벤처 게임. 
+          최적화된 WebGL 성능으로 Poki 플랫폼에 게시.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-azure px-3 py-1 text-sm rounded-full text-celadonBlue font-medium">Unity</span>
+          <span class="bg-azure px-3 py-1 text-sm rounded-full text-celadonBlue font-medium">WebGL</span>
+          <span class="bg-azure px-3 py-1 text-sm rounded-full text-celadonBlue font-medium">Poki</span>
+          <span class="bg-azure px-3 py-1 text-sm rounded-full text-celadonBlue font-medium">Puzzle</span>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer" @click="openPremierServi">
+        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
+          <h3 class="text-xl font-semibold text-prussianBlue hover:text-celadonBlue transition-colors">
+            <a href="https://store.steampowered.com/app/2884670/Premier_Servi/" target="_blank" rel="noopener noreferrer" class="hover:underline">
+              {{ language === 'en' ? 'Premier Servi - Party Game' : 'Premier Servi - 파티 게임' }}
+            </a>
+          </h3>
+          <span class="text-gray-600 font-medium">2025</span>
+        </div>
+        <p v-if="language === 'en'" class="text-gray-700 mb-3">
+          Colorful party mind game featuring delicious French pastry. Race to eat cakes before your friends 
+          without getting spotted in this 2-4 player local multiplayer game.
+        </p>
+        <p v-else class="text-gray-700 mb-3">
+          맛있는 프랑스 페이스트리를 특징으로 하는 화려한 파티 마인드 게임. 
+          2-4인 로컬 멀티플레이어 게임에서 들키지 않고 친구들보다 먼저 케이크를 먹기 위해 경주.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-azure px-3 py-1 text-sm rounded-full text-celadonBlue font-medium">Unity</span>
+          <span class="bg-azure px-3 py-1 text-sm rounded-full text-celadonBlue font-medium">Steam</span>
+          <span class="bg-azure px-3 py-1 text-sm rounded-full text-celadonBlue font-medium">Party Game</span>
+          <span class="bg-azure px-3 py-1 text-sm rounded-full text-celadonBlue font-medium">Local Multiplayer</span>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
       <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer" @click="openBarrierSquad">
         <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
           <h3 class="text-xl font-semibold text-prussianBlue hover:text-celadonBlue transition-colors">
@@ -31,7 +83,7 @@
         </div>
       </div>
 
-      <!-- Project 2 -->
+      <!-- Project 4 -->
       <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer" @click="openKresus">
         <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
           <h3 class="text-xl font-semibold text-prussianBlue hover:text-celadonBlue transition-colors">
@@ -168,6 +220,8 @@
       {{ language === 'en' ? 'Featured Projects' : '주요 프로젝트' }}
     </h2>
     <ul v-if="language === 'en'" class="text-gray-700">
+      <li>• Messy Kingdom - Puzzle Adventure (Unity, WebGL, Poki, Puzzle) 2025</li>
+      <li>• Premier Servi - Party Game (Unity, Steam, Party Game, Local Multiplayer) 2025</li>
       <li>• Barrier Squad - Mobile Tower Defense (Unity, C#, Android, AI Art) 2024</li>
       <li>• Kresus Vue.js Toolkit (Vue.js, TailwindCSS, Open Source) 2023</li>
       <li>• Datanest - Decentralized Data Marketplace (Vue.js, Web3, Blockchain, NFT) 2022</li>
@@ -176,6 +230,8 @@
       <li>• GamePipe - Gaming Platform (Laravel, PHP, TailwindCSS, Gaming) 2021</li>
     </ul>
     <ul v-else class="text-gray-700">
+      <li>• Messy Kingdom - 퍼즐 어드벤처 (Unity, WebGL, Poki, Puzzle) 2025</li>
+      <li>• Premier Servi - 파티 게임 (Unity, Steam, Party Game, Local Multiplayer) 2025</li>
       <li>• Barrier Squad - 모바일 타워 디펜스 (Unity, C#, Android, AI Art) 2024</li>
       <li>• Kresus Vue.js 툴킷 (Vue.js, TailwindCSS, Open Source) 2023</li>
       <li>• Datanest - 탈중앙화 데이터 마켓플레이스 (Vue.js, Web3, Blockchain, NFT) 2022</li>
@@ -188,6 +244,14 @@
 
 <script setup>
 const { language } = useLanguage()
+
+const openMessyKingdom = () => {
+  window.open('https://poki.com/en/g/messy-kingdom-35605720', '_blank')
+}
+
+const openPremierServi = () => {
+  window.open('https://store.steampowered.com/app/2884670/Premier_Servi/', '_blank')
+}
 
 const openBarrierSquad = () => {
   window.open('https://play.google.com/store/apps/details?id=com.gamevrest.BarriersQuad', '_blank')

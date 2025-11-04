@@ -23,11 +23,11 @@
           </span>
         </div>
         <ul v-if="language === 'en'" class="text-gray-700 space-y-2">
-          <li>• <a href="https://zempie.com" target="_blank" rel="noopener noreferrer" class="text-celadonBlue hover:underline">Zempie Website</a>, as a developer and PM Nuxt.js / TailwindCSS</li>
+          <li>• <a href="https://play.google.com/store/apps/details?id=com.fromthered.zempie&hl=en" target="_blank" rel="noopener noreferrer" class="text-celadonBlue hover:underline">Zempie App</a>, as a developer and PM Nuxt.js / TailwindCSS</li>
           <li>• Indie game developer related events organization and management</li>
         </ul>
         <ul v-else class="text-gray-700 space-y-2">
-          <li>• <a href="https://zempie.com" target="_blank" rel="noopener noreferrer" class="text-celadonBlue hover:underline">Zempie Website</a>를 개발 및 PM, Nuxt.js / TailwindCSS</li>
+          <li>• <a href="https://play.google.com/store/apps/details?id=com.fromthered.zempie&hl=en" target="_blank" rel="noopener noreferrer" class="text-celadonBlue hover:underline">Zempie App</a>를 개발 및 PM, Nuxt.js / TailwindCSS</li>
           <li>• 이벤트 및 인디 게임 개발자 관련 이벤트 조직 및 관리</li>
         </ul>
       </div>

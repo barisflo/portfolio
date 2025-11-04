@@ -18,6 +18,23 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: 'messy-kingdom',
+    title: 'Messy Kingdom',
+    year: '2025',
+    link: 'https://poki.com/en/g/messy-kingdom-35605720',
+    image: '/images/MessyKingdom.png',
+    tags: ['Unity', 'WebGL', 'Poki'],
+    category: 'Games',
+    description: {
+      en: 'Puzzle adventure game published on Poki platform with engaging gameplay mechanics',
+      kr: 'Poki 플랫폼에 게시된 매력적인 게임플레이 메커니즘을 가진 퍼즐 어드벤처 게임'
+    },
+    longDescription: {
+      en: 'A colorful puzzle adventure game featuring strategic gameplay and creative problem-solving. Published on the Poki gaming platform, reaching thousands of players worldwide with optimized WebGL performance.',
+      kr: '전략적 게임플레이와 창의적 문제 해결을 특징으로 하는 다채로운 퍼즐 어드벤처 게임입니다. Poki 게임 플랫폼에 게시되어 최적화된 WebGL 성능으로 전 세계 수천 명의 플레이어에게 도달했습니다.'
+    }
+  },
+  {
     id: 'barrier-squad',
     title: 'Barrier Squad',
     year: '2024',
