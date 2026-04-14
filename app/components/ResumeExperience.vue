@@ -5,7 +5,34 @@
     </h2>
 
     <div class="space-y-6">
-      <!-- Experience Item 1 - FromTheRed -->
+      <!-- Experience Item 1 - Independent Work -->
+      <div class="border-l-4 border-celadonBlue pl-6">
+        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2 experience-header">
+          <div class="experience-title-company">
+            <h3 class="text-xl font-semibold text-prussianBlue inline">
+              {{ language === 'en' ? 'Independent Game QA & Production Work' : '독립 게임 QA 및 프로덕션 업무' }}
+            </h3>
+            <span class="text-celadonBlue font-medium">
+              - {{ language === 'en' ? 'Korea' : '대한민국' }}
+            </span>
+          </div>
+          <span class="text-gray-600 font-medium experience-date">
+            {{ language === 'en' ? '2025 - Present' : '2025 - 현재' }}
+          </span>
+        </div>
+        <ul v-if="language === 'en'" class="text-gray-700 space-y-2">
+          <li>• Attend event in Korea and abroad</li>
+          <li>• Help korean studio test their games for global users</li>
+          <li>• Make connections between publisher and Indie game developers</li>
+        </ul>
+        <ul v-else class="text-gray-700 space-y-2">
+          <li>• 한국 및 해외 이벤트 참석</li>
+          <li>• 한국 스튜디오의 게임을 글로벌 유저 대상 테스트 지원</li>
+          <li>• 퍼블리셔와 인디 게임 개발자 간의 연결 지원</li>
+        </ul>
+      </div>
+
+      <!-- Experience Item 2 - FromTheRed -->
       <div class="border-l-4 border-celadonBlue pl-6">
         <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2 experience-header">
           <div class="experience-title-company">
@@ -19,7 +46,7 @@
             </span>
           </div>
           <span class="text-gray-600 font-medium experience-date">
-            {{ language === 'en' ? '2024 - Present' : '2024 - 현재' }}
+            {{ language === 'en' ? '2024 - October 2025' : '2024 - 2025년 10월' }}
           </span>
         </div>
         <ul v-if="language === 'en'" class="text-gray-700 space-y-2">
@@ -32,7 +59,7 @@
         </ul>
       </div>
 
-      <!-- Experience Item 2 -->
+      <!-- Experience Item 3 -->
       <div class="border-l-4 border-celadonBlue pl-6">
         <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2 experience-header">
           <div class="experience-title-company">
@@ -57,7 +84,7 @@
         </ul>
       </div>
 
-      <!-- Experience Item 3 - EPITECH DIGITAL -->
+      <!-- Experience Item 4 - EPITECH DIGITAL -->
       <div class="border-l-4 border-celadonBlue pl-6">
         <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2 experience-header">
           <div class="experience-title-company">
@@ -84,7 +111,7 @@
         </ul>
       </div>
 
-      <!-- Experience Item 4 - AGILE PARTNER -->
+      <!-- Experience Item 5 - AGILE PARTNER -->
       <div class="border-l-4 border-celadonBlue pl-6">
         <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2 experience-header">
           <div class="experience-title-company">
@@ -111,7 +138,7 @@
         </ul>
       </div>
 
-      <!-- Experience Item 5 - C2I SANTÉ -->
+      <!-- Experience Item 6 - C2I SANTÉ -->
       <div class="border-l-4 border-celadonBlue pl-6">
         <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2 experience-header">
           <div class="experience-title-company">
