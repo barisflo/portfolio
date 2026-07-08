@@ -27,7 +27,7 @@ export default defineNuxtConfig({
   // Enable SSG for better performance
   nitro: {
     prerender: {
-      routes: ['/', '/EastLine']
+      routes: ['/', '/EastLine', '/alain']
     }
   }
 })
