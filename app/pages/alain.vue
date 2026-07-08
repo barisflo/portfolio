@@ -114,7 +114,13 @@ useHead({
     { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
     { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
     { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Pacifico&display=swap' }
-  ]
+  ],
+  bodyAttrs: {
+    class: 'alain-body-scroll'
+  },
+  htmlAttrs: {
+    class: 'alain-body-scroll'
+  }
 })
 
 useSeoMeta({
@@ -206,13 +212,22 @@ onMounted(() => {
 })
 </script>
 
+<style>
+html.alain-body-scroll,
+body.alain-body-scroll {
+  overflow-x: hidden;
+  overflow-y: auto !important;
+  height: auto !important;
+  min-height: 100%;
+  touch-action: pan-y;
+  -webkit-overflow-scrolling: touch;
+}
+</style>
+
 <style scoped>
 .alain-page {
   min-height: 100dvh;
   overflow-x: hidden;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  overscroll-behavior-y: contain;
 }
 
 .alain-bg-gradient {
