@@ -58,7 +58,7 @@
       >
         <p class="alain-title-sparkle alain-title-sparkle--left" aria-hidden="true">✦</p>
         <h1 class="alain-title">
-          Joyeux Anniversaire !
+          Joyeux Anniversaire Papa !
         </h1>
         <p class="alain-title-sparkle alain-title-sparkle--right" aria-hidden="true">✦</p>
       </div>
@@ -66,26 +66,11 @@
       <!-- Horizontal video -->
       <div class="mt-8 w-full sm:mt-10">
         <div class="overflow-hidden rounded-xl border border-white/10 bg-black/40 shadow-[0_24px_80px_-24px_rgba(0,0,0,0.8)] ring-1 ring-white/5">
-          <div
-            class="relative aspect-video w-full touch-pan-y"
-            @click="activateVideo('main')"
-          >
-            <div
-              v-if="!activeVideos.main"
-              class="absolute inset-0 z-10 flex cursor-pointer items-center justify-center bg-black/30 backdrop-blur-[2px] transition hover:bg-black/20"
-            >
-              <span class="flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm text-white/90">
-                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-                Appuyer pour lire
-              </span>
-            </div>
+          <div class="relative aspect-video w-full">
             <iframe
-              :src="activeVideos.main ? videoUrls.main : undefined"
+              src="https://www.youtube.com/embed/6acmqEr4v1o"
               title="Anniversaire"
               class="absolute inset-0 h-full w-full border-0"
-              :class="{ 'pointer-events-none': !activeVideos.main }"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
               loading="lazy"
@@ -102,26 +87,11 @@
 
       <div class="mx-auto mt-6 w-full max-w-[min(100%,280px)] sm:mt-8 sm:max-w-xs">
         <div class="overflow-hidden rounded-xl border border-white/10 bg-black/40 shadow-[0_24px_80px_-24px_rgba(0,0,0,0.8)] ring-1 ring-white/5">
-          <div
-            class="relative aspect-[9/16] w-full touch-pan-y"
-            @click="activateVideo('short')"
-          >
-            <div
-              v-if="!activeVideos.short"
-              class="absolute inset-0 z-10 flex cursor-pointer items-center justify-center bg-black/30 backdrop-blur-[2px] transition hover:bg-black/20"
-            >
-              <span class="flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm text-white/90">
-                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-                Appuyer pour lire
-              </span>
-            </div>
+          <div class="relative aspect-[9/16] w-full">
             <iframe
-              :src="activeVideos.short ? videoUrls.short : undefined"
+              src="https://www.youtube.com/embed/d2z4BNn294Y"
               title="Pour tes copains"
               class="absolute inset-0 h-full w-full border-0"
-              :class="{ 'pointer-events-none': !activeVideos.short }"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
               loading="lazy"
@@ -148,23 +118,9 @@ useHead({
 })
 
 useSeoMeta({
-  title: 'Joyeux Anniversaire !',
+  title: 'Joyeux Anniversaire Papa !',
   robots: 'noindex, nofollow'
 })
-
-const videoUrls = {
-  main: 'https://www.youtube.com/embed/6acmqEr4v1o?autoplay=1',
-  short: 'https://www.youtube.com/embed/d2z4BNn294Y?autoplay=1'
-}
-
-const activeVideos = reactive({
-  main: false,
-  short: false
-})
-
-function activateVideo (key: keyof typeof activeVideos) {
-  activeVideos[key] = true
-}
 
 interface FallingPiece {
   id: number
