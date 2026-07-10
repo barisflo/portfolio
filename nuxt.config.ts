@@ -26,6 +26,9 @@ export default defineNuxtConfig({
 
   // Enable SSG for better performance
   nitro: {
+    routeRules: {
+      '/papa': { redirect: { to: '/alain', statusCode: 301 } }
+    },
     prerender: {
       routes: ['/', '/EastLine', '/alain']
     }
